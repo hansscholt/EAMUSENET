@@ -133,5 +133,15 @@ namespace eamuse
 
             return new String(stringChars);
         }
+
+        public static XElement FindMusicBymcode(int mcode)
+        {
+            var filesPath = Directory.GetCurrentDirectory() + @"\musicdb.xml";
+            XDocument xml = XDocument.Load(filesPath);
+            XElement mdb = xml.Document.Element("mdb");
+            IEnumerable<XElement> music = mdb.Elements("music");
+            return music.FirstOrDefault(x => (int)x.Element("mcode") == mcode);
+            
+        }
     }
 }

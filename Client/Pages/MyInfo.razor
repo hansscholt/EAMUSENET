@@ -55,7 +55,7 @@
                     <MudCardHeader>
                         <CardHeaderContent>
                             <MudText Typo="Typo.h4">@item.name - @item.code</MudText>
-                            <MudText Typo="Typo.h6">Last Seen: @item.date_last.ToLocalTime()</MudText>
+                            <MudText Typo="Typo.h6">Last Seen: @TimeOffset(item.date_last)</MudText>
                         </CardHeaderContent>
                         <CardHeaderActions>
                             <MudIconButton Disabled="disabledLoadCard" Icon="@Icons.Material.Filled.Settings"
@@ -174,7 +174,7 @@
     </MudGrid>
     <MudGrid Justify="Justify.FlexStart">
         <MudItem xs="4">
-            <MudTextField @bind-Value="optionName" ReadOnly="true" Immediate MaxLength="8" TextChanged="(value) => optionName = value.ToUpper()"
+            <MudTextField @bind-Value="optionName" Immediate MaxLength="8" TextChanged="(value) => optionName = value.ToUpper()"
                         Label="NAME" Variant="Variant.Text" />
             </MudItem>
             <MudItem xs="4">
@@ -245,6 +245,11 @@
             return true;
 
         return false;
+    }
+
+    DateTime TimeOffset(DateTime cardtime)
+    {        
+        return cardtime.AddHours(3);//not sure what time is the server, but this adjust the time to Eastern FOR NOW
     }
 
     protected async Task LoadCardsClick(MouseEventArgs e)
@@ -319,6 +324,7 @@
             SnackbarService.Add("Card Updated", Severity.Success);
             disabledUpdateCard = false;
             optionPass = string.Empty;
+
         }
     }
 

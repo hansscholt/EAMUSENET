@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="music_db.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.0-rc.2.21480.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
@@ -22,6 +26,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Client\BlazorCRUDApp.Client.csproj" />
     <ProjectReference Include="..\Shared\BlazorCRUDApp.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="musicdb.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 

@@ -4,4 +4,6 @@ Client/bin/
 Client/obj/
 Server/bin/
 Server/obj/
+tools/bin/
+tools/obj/
 .vs/

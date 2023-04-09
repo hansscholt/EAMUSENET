@@ -26,6 +26,7 @@ using System.Reflection;
 using System.Reflection.PortableExecutable;
 using System.Security.Cryptography;
 using System.Text;
+using System.Xml;
 using System.Xml.Linq;
 using ZstdSharp;
 using static Azure.Core.HttpHeader;
@@ -45,20 +46,19 @@ namespace eamuse.Controllers
         //public Home(ILogger<Home> logger)
         //{
            
-        //    _logger = logger;
 
-        //    _logger.LogInformation("|||||||||||||||||HOME");
-        //    if (Request != null)
-        //    {
-        //        //string mo = Request.Query["module"];
-        //        //string me = Request.Query["method"];
-        //        //_logger.LogInformation("|||||||||||||||||: " + mo);
-        //        //_logger.LogInformation("|||||||||||||||||: " + me);
+        //    //_logger.LogInformation("|||||||||||||||||HOME");
+        //    //if (Request != null)
+        //    //{
+        //    //    //string mo = Request.Query["module"];
+        //    //    //string me = Request.Query["method"];
+        //    //    //_logger.LogInformation("|||||||||||||||||: " + mo);
+        //    //    //_logger.LogInformation("|||||||||||||||||: " + me);
 
-        //        //string abc = Request.QueryString.ToString();
-        //        //_logger.LogInformation("|||||||||||||||||smodule: " + abc);
-        //    }
-           
+        //    //    //string abc = Request.QueryString.ToString();
+        //    //    //_logger.LogInformation("|||||||||||||||||smodule: " + abc);
+        //    //}
+
         //}
         //[HttpGet]
         //[Route("/{*url}")]
@@ -89,7 +89,7 @@ namespace eamuse.Controllers
         //    _logger.LogInformation("|||||||||||||||||smodule: " + abc);
         //}
 
-      
+
         //[HttpPost]
         //[Route("pcbtracker/{*url}")]
         //public void Tracker()
@@ -158,8 +158,6 @@ namespace eamuse.Controllers
         [Route("core/{*url}")]
         public void Post()
         {
-            string abc = Request.QueryString.ToString();
-            //_logger.LogInformation("|||||||||||||||||smodule:" + abc);
             string mo = Request.Query["module"];
             string me = Request.Query["method"];
 
@@ -223,7 +221,7 @@ namespace eamuse.Controllers
 
 
                     string url = "http://199.102.48.162/core";
-                    //url = "http://localhost:5091/core";
+                    url = "http://localhost:5091/core";
 
                     //string urls = Request.Scheme + "://" + Request.Host.Host;
                     //string url = urls + "/core";
@@ -1396,6 +1394,9 @@ namespace eamuse.Controllers
                             int mcode = (int)note.Element("mcode");
                             int notetype = (int)note.Element("notetype");
 
+                            if (Util.FindMusicBymcode(mcode) == null)//by list
+                                continue;
+                            
                             Ghost ghost = new Ghost()
                             {
                                 ghostsize = (int)note.Element("ghostsize"),
@@ -1408,7 +1409,7 @@ namespace eamuse.Controllers
 
                             Score score = new Score();
                             score = new Score();
-                            score.mcode = (int)note.Element("mcode");
+                            score.mcode = mcode;
                             score.clearkind = (int)note.Element("clearkind");
                             score.count = 1;
                             score.ghostid = ghostid;
@@ -1416,7 +1417,7 @@ namespace eamuse.Controllers
                             score.score = (int)note.Element("score");
                             score.exscore = (int)note.Element("exscore");
                             score.maxcombo = (int)note.Element("maxcombo");
-                            score.notetype = (int)note.Element("notetype");
+                            score.notetype = notetype;
                             score.judge_marvelous = (int)note.Element("judge_marvelous");
                             score.judge_perfect = (int)note.Element("judge_perfect");
                             score.judge_great = (int)note.Element("judge_great");
@@ -1428,6 +1429,7 @@ namespace eamuse.Controllers
                             score.fastcount = (int)note.Element("fastcount");
                             score.slowcount = (int)note.Element("slowcount");
                             score.cardid = currentCard.id;
+                            score.date = DateTime.Now;
 
 
                             MSSQLConnection.InsertScore(score);

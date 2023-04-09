@@ -1,46 +1,48 @@
 ﻿@page "/scoring"
 @using BlazorCRUDApp.Shared
-@inject HttpClient Http
+@using eamuse;
+@inject HttpClient _httpClient
 
 <PageTitle>Scoring</PageTitle>
 
-
-<p>YES.</p>
-@*
-@if (forecasts == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}*@
+<MudTable Items="@scoreList" Dense="true" Hover="true" SortLabel="Sort By" FixedHeader="true" FixedFooter="true">
+    <HeaderContent>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.id)">Song</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.notetype)">Difficulty</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.clearkind)">Rank</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.score)">Score</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.judge_perfect)">Result</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Descending" SortBy="new Func<Score, object>(x=>x.date)">Date</MudTableSortLabel></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Song">
+            <MudText Typo="Typo.body2">TITLE</MudText>
+            <MudText Typo="Typo.caption">ARTIST</MudText>
+        </MudTd>
+        <MudTd DataLabel="Difficulty">@context.notetype</MudTd>
+        <MudTd DataLabel="Rank">@context.clearkind</MudTd>
+        <MudTd DataLabel="Score">@context.score</MudTd>
+        <MudTd DataLabel="Result">
+            <MudText Typo="Typo.body2">1</MudText>
+            <MudText Typo="Typo.body2">2</MudText>
+            <MudText Typo="Typo.body2">3</MudText>
+            <MudText Typo="Typo.body2">4</MudText>
+        </MudTd>
+        <MudTd DataLabel="Date">@context.date</MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager PageSizeOptions="new int[]{50, 100}" />
+    </PagerContent>
+</MudTable>
 
 @code {
-    //private WeatherForecast[]? forecasts;
+    private List<Score> scoreList = new List<Score>();
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await _httpClient.GetAsync("api/scoring/GetAllScore");
+        response.EnsureSuccessStatusCode();
+        scoreList = await response.Content.ReadFromJsonAsync<List<Score>>();
 
-    //protected override async Task OnInitializedAsync()
-    //{
-    //    forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
-    //}
+        //Elements = await httpClient.GetFromJsonAsync<List<Element>>("webapi/periodictable");
+    }
 }

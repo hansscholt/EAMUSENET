@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 
-namespace eamuse.Models
+namespace eamuse
 {
     [BsonIgnoreExtraElements]
     public class Score
@@ -98,6 +98,9 @@ namespace eamuse.Models
 
         [BsonElement(elementName: "cardid")]
         public int cardid { get; set; }
+
+        [BsonElement(elementName: "date")]
+        public DateTime date { get; set; }
 
     }
 
