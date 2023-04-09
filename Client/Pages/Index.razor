@@ -1,0 +1,75 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+@*<MudText Typo="Typo.h3" GutterBottom="true">Hello, world!</MudText>*@
+
+<MudText Typo="Typo.subtitle1">A server in Core 6 for unofficial releases</MudText>
+<MudText Typo="Typo.subtitle1">You need a unique PCBID register in the server in order to connect</MudText>
+<MudText Typo="Typo.subtitle1">We don't provide the modified game nor the tools to modify it</MudText>
+
+<MudDivider Class="my-6" ></MudDivider>
+<MudItem xs="12" Class="mb-12">
+    <MudText Typo="Typo.h6">08/04/2023</MudText>
+    <MudPaper Width="100%">
+        <MudList Dense>
+            <MudListItem Text="MIGRATED TO MSSQL due to limitations of the hosting server" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+            <MudListItem Text="Ghost now loads properly" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+            <MudListItem Text="Last option info is now recorded" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+        </MudList>
+    </MudPaper>
+</MudItem>
+<MudItem xs="12" Class="mb-12">
+    <MudText Typo="Typo.h6">05/04/2023</MudText>
+    <MudPaper Width="100%">
+        <MudList Dense >
+            <MudListItem Text="NEW WEB UI" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+            <MudListItem Text="Ability to change the pin" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+            <MudListItem Text="Ability to change the weight" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+        </MudList>
+    </MudPaper>
+</MudItem>
+<MudItem xs="12" Class="mb-12">
+    <MudText Typo="Typo.h6">Beta</MudText>
+    <MudPaper Width="100%">
+        <MudList Dense>
+            <MudListItem Text="Most of the features are working" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+            <MudListItem Text="Server is slow for now due to the remote db location" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+            <MudListItem Text="No song index for now" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+        </MudList>
+    </MudPaper>
+</MudItem>
+<MudItem xs="12" Class="mb-12">
+    <MudText Typo="Typo.h6">Know bugs</MudText>
+    <MudPaper Width="100%">
+        <MudList Dense>
+            <MudListItem Text="Ghost are now loading properly in some cases" Icon="@Icons.Material.Outlined.ArrowRightAlt" IconColor="RandomEnumValue<Color>()" />
+        </MudList>
+    </MudPaper>
+</MudItem>
+@code
+{
+    string _colorValue;
+    protected override async Task OnInitializedAsync()
+    {
+        var chars = "ABCDEF0123456789";
+        var stringChars = new char[7];
+        stringChars[0] = '#';
+        var random = new Random();
+
+        for (int i = 1; i < 7; i++)
+            stringChars[i] = chars[random.Next(chars.Length)];
+
+        _colorValue = new String(stringChars);
+    }
+
+    static Random _R = new Random();
+    static T RandomEnumValue<T>()
+    {
+        var v = Enum.GetValues(typeof(T));
+        int r = _R.Next(v.Length);
+        while (r == 9)        
+            r = _R.Next(v.Length);        
+        return (T)v.GetValue(r);
+    }
+}

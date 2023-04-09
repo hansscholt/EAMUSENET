@@ -1,0 +1,365 @@
+﻿@page "/myinfo"
+@using BlazorCRUDApp.Shared;
+@using System.Text;
+@using eamuse;
+@using MudBlazor
+
+@inject ISnackbar SnackbarService
+@inject ISnackbar Snackbar
+@inject HttpClient _httpClient
+<PageTitle>My Info</PageTitle>
+@*<p role="status">Current count: @currentCount</p>*@
+
+<MudGrid Justify="Justify.FlexStart">
+    <MudItem xs="6">
+        <MudTextField @bind-Value="pcbID" MaxLength="20"
+                        Label="PCBID" HelperText="Enter your unique 20 length string" Variant="Variant.Text" />
+    </MudItem>
+    <MudItem xs="6">
+        <MudButton Variant="Variant.Outlined" Color="Color.Primary" Disabled="disabledLoadPCB" OnClick="LoadCardsClick">
+            @if (disabledLoadPCB)
+            {
+                <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                <MudText Class="ms-2">Processing</MudText>
+            }
+            else
+            {
+                <MudText>Load Cards DATA</MudText>
+            }
+        </MudButton>
+
+    </MudItem>
+</MudGrid>
+
+@if (cardList != null)
+{
+
+    <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+    <MudText Typo="Typo.h4">@cardList.Count Cards found</MudText>
+    <MudGrid Justify="Justify.FlexStart">
+        @for (int c = 0; c < cardList.Count; c++)
+        {
+            Card item = cardList[c];
+            int iUniqueSong = uniqueSongCount[c];
+            int iTotalPlays = totalPlaysCount[c];
+
+            <MudItem xs="6">
+                @code {
+    string cardColor = Colors.Grey.Darken4;
+        }
+        @if (item.refid == optionRefSelected)
+                    cardColor = Colors.Purple.Darken4;
+                else
+                    cardColor = Colors.Grey.Darken4;
+                <MudCard Style="@($"background:{cardColor};")">
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <MudText Typo="Typo.h4">@item.name - @item.code</MudText>
+                            <MudText Typo="Typo.h6">Last Seen: @item.date_last.ToLocalTime()</MudText>
+                        </CardHeaderContent>
+                        <CardHeaderActions>
+                            <MudIconButton Disabled="disabledLoadCard" Icon="@Icons.Material.Filled.Settings"
+                                    Color="Color.Secondary" OnClick="(args) => EditCardClick(args, item.refid)" />
+                        </CardHeaderActions>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <MudGrid Justify="Justify.FlexStart">
+                            <MudItem xs="6">
+                                <MudText Typo="Typo.body2">CardID: @item.cardid</MudText>
+                            </MudItem>
+                            <MudItem xs="6">
+                                <MudText Typo="Typo.body2">RefID: @item.refid</MudText>
+                            </MudItem>
+                        </MudGrid>
+                        <MudGrid Justify="Justify.FlexStart">
+                            <MudItem xs="6">
+                                <MudText Typo="Typo.body2">Grade Single: @item.single_grade</MudText>
+                            </MudItem>
+                            <MudItem xs="6">
+                                <MudText Typo="Typo.body2">Grade Double: @item.double_grade</MudText>
+                            </MudItem>
+                        </MudGrid>
+                        <MudGrid Justify="Justify.FlexStart">
+                            <MudItem xs="6">
+                                <MudText Typo="Typo.body2">Unique Song Plays: @iUniqueSong</MudText>
+                            </MudItem>
+                            <MudItem xs="6">
+                                <MudText Typo="Typo.body2">Total Song Plays: @iTotalPlays</MudText>
+                            </MudItem>
+                        </MudGrid>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        }
+    </MudGrid>
+}
+
+@if (cardOption != null)
+{
+    <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+    @*<MudText Typo="Typo.body2">@optionName</MudText>*@
+    <MudGrid Justify="Justify.FlexStart">
+        <MudItem xs="3">
+            <MudSelect T="int" @bind-Value="optionCombo" Label="Judgement" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem Value="0">Front</MudSelectItem>
+                <MudSelectItem Value="1">Back</MudSelectItem>
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="3">
+            <MudSelect T="int" @bind-Value="optionFilter" Label="Filter" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem Value="0">Off</MudSelectItem>
+                <MudSelectItem Value="1">Dark</MudSelectItem>
+                <MudSelectItem Value="2">Darker</MudSelectItem>
+                <MudSelectItem Value="3">Darkest</MudSelectItem>
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="3">
+            <MudSelect T="int" @bind-Value="optionGuideLines" Label="Guidelines" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem Value="0">Off</MudSelectItem>
+                <MudSelectItem Value="1">Top</MudSelectItem>
+                <MudSelectItem Value="2">Center</MudSelectItem>
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="3">
+            <MudCheckBox @bind-Checked="optionFastSlow">Fast/Slow</MudCheckBox>
+        </MudItem>
+    </MudGrid>
+    <MudGrid Justify="Justify.FlexStart">
+        <MudItem xs="4">
+            <MudSelect T="int" @bind-Value="optionArrow" Label="Arrow" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem Value="0">Normal</MudSelectItem>
+                <MudSelectItem Value="1">X</MudSelectItem>
+                <MudSelectItem Value="2">Classic</MudSelectItem>
+                <MudSelectItem Value="3">Cyber</MudSelectItem>
+                <MudSelectItem Value="4">Medium</MudSelectItem>
+                <MudSelectItem Value="5">Small</MudSelectItem>
+                <MudSelectItem Value="6">Dot</MudSelectItem>
+            </MudSelect>
+        </MudItem>
+    </MudGrid>
+    <MudGrid Justify="Justify.FlexStart">
+        <MudItem xs="6">
+            <MudSelect T="int" @bind-Value="optionCharacter" Label="Character" AnchorOrigin="Origin.BottomCenter">
+                <MudSelectItem Value="0">All Random</MudSelectItem>
+                <MudSelectItem Value="1">Male Random</MudSelectItem>
+                <MudSelectItem Value="2">Female Random</MudSelectItem>
+                <MudSelectItem Value="3">Yuni</MudSelectItem>
+                <MudSelectItem Value="4">Rage</MudSelectItem>
+                <MudSelectItem Value="5">Afro</MudSelectItem>
+                <MudSelectItem Value="6">Jenny</MudSelectItem>
+                <MudSelectItem Value="7">Emi</MudSelectItem>
+                <MudSelectItem Value="8">Baby-Lon</MudSelectItem>
+                <MudSelectItem Value="9">Gus</MudSelectItem>
+                <MudSelectItem Value="10">Ruby</MudSelectItem>
+                <MudSelectItem Value="11">Alice</MudSelectItem>
+                <MudSelectItem Value="12">Julio</MudSelectItem>
+                <MudSelectItem Value="13">Bonnie</MudSelectItem>
+                <MudSelectItem Value="14">Zero</MudSelectItem>
+                <MudSelectItem Value="15">Rinon</MudSelectItem>
+                <MudSelectItem Value="16">Emi 2 UNLOCK</MudSelectItem>
+                <MudSelectItem Value="17">Alice 2 UNLOCK</MudSelectItem>
+                <MudSelectItem Value="18">Rinon 2 UNLOCK</MudSelectItem>
+                <MudSelectItem Value="19">Yuni 2 UNLOCK</MudSelectItem>
+                <MudSelectItem Value="20">Rinon 3 HACK</MudSelectItem>
+                <MudSelectItem Value="21">Konsento HACK</MudSelectItem>
+                <MudSelectItem Value="22">Zuki HACK</MudSelectItem>
+                <MudSelectItem Value="23">PiX HACK</MudSelectItem>
+                <MudSelectItem Value="24">Emi 3 OLD HACK</MudSelectItem>
+                <MudSelectItem Value="25">Yuni 3 HACK</MudSelectItem>
+                <MudSelectItem Value="26">Rage 2 HACK</MudSelectItem>
+                <MudSelectItem Value="27">Afro 2 HACK</MudSelectItem>
+                <MudSelectItem Value="28">Jenny 2 HACK</MudSelectItem>
+            </MudSelect>
+        </MudItem>
+    </MudGrid>
+    <MudGrid Justify="Justify.FlexStart">
+        <MudItem xs="4">
+            <MudTextField @bind-Value="optionName" ReadOnly="true" Immediate MaxLength="8" TextChanged="(value) => optionName = value.ToUpper()"
+                        Label="NAME" Variant="Variant.Text" />
+            </MudItem>
+            <MudItem xs="4">
+            <MudTextField Mask="@(new PatternMask("0000"))" @bind-Value="optionPass" Error="errorPin" ErrorText="Not a valid PIN" MaxLength="4"
+                        Label="NEW PIN" Variant="Variant.Text" />
+            </MudItem>
+            <MudItem xs="4">
+            <MudTextField @bind-Value="optionWeight" Format="F1" MaxLength="3"
+                        Label="WEIGHT" Variant="Variant.Text" HelperText="Double numbers, enter 0 to disable" />
+            </MudItem>
+            </MudGrid>
+
+    <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+    <MudButton Variant="Variant.Outlined" Disabled="disabledUpdateCard" Color="Color.Primary" OnClick="UpdateProfileClick">
+        @if (disabledUpdateCard)
+        {
+            <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+            <MudText Class="ms-2">Processing</MudText>
+        }
+        else
+        {
+            <MudText>Update</MudText>
+        }
+    </MudButton>
+}
+
+
+@code {
+    string pcbID { get; set; }
+
+    bool disabledLoadPCB;
+    bool disabledLoadCard;
+    bool disabledUpdateCard;
+    bool errorPin;
+    //bool cardLoaded;
+
+    List<Card> cardList;
+    List<int> uniqueSongCount;
+    List<int> totalPlaysCount;
+
+    string[][] cardOption;
+
+    string optionRefSelected;
+
+    int optionCombo;
+    int optionFilter;
+    int optionGuideLines;
+    int optionFastSlow;
+    int optionArrow;
+    int optionCharacter;
+    string optionName;
+    string optionPass;
+    float optionWeight;
+
+    bool InvalidPCB()
+    {
+        bool isHex;
+        foreach (var c in pcbID)
+        {
+            isHex = ((c >= '0' && c <= '9') ||
+                     (c >= 'a' && c <= 'f') ||
+                     (c >= 'A' && c <= 'F'));
+            if (!isHex)
+                return true;
+        }
+
+        if (pcbID.Length != 20)
+            return true;
+
+        return false;
+    }
+
+    protected async Task LoadCardsClick(MouseEventArgs e)
+    {
+        disabledLoadPCB = true;  
+
+        if (InvalidPCB())
+        {
+            SnackbarService.Add("Invalid PCB", Severity.Error);
+            disabledLoadPCB = false;
+            return;
+        }
+
+        var response = await _httpClient.GetAsync("api/option/GetAllCard/" + pcbID);
+        response.EnsureSuccessStatusCode();
+        cardList = await response.Content.ReadFromJsonAsync<List<Card>>();
+
+        if (response.IsSuccessStatusCode)
+        {
+            uniqueSongCount = new List<int>();
+            totalPlaysCount = new List<int>();
+            foreach (var item in cardList)
+            {
+                response = await _httpClient.GetAsync("api/option/GetSongCounts/" + item.refid);
+                response.EnsureSuccessStatusCode();
+                int[] resp = response.Content.ReadFromJsonAsync<int[]>().Result;
+                uniqueSongCount.Add(resp[0]);
+                totalPlaysCount.Add(resp[1]);
+
+                //response = await _httpClient.GetAsync("api/option/GetTotalPlaysCount/" + item.refid);
+                //response.EnsureSuccessStatusCode();
+                //totalPlaysCount.Add(await response.Content.ReadFromJsonAsync<int>());
+            }
+            SnackbarService.Add("Cards Loaded", Severity.Success);
+            disabledLoadPCB = false;
+            disabledLoadCard = false;
+            disabledUpdateCard = false;
+            optionPass = string.Empty;
+            //cardLoaded = true;
+        }
+    }
+
+    protected async Task UpdateProfileClick(MouseEventArgs e)
+    {
+        errorPin = false;
+        if (optionPass.Length != 0 && optionPass.Length != 4)
+        {
+            errorPin = true;
+            return;
+        }
+
+        if (optionPass.Length == 0)        
+            optionPass = "XXXX";
+
+        disabledUpdateCard = true;
+        var jsonString = @"{             
+           ""combo"": " + "" + optionCombo + "" + @",
+           ""weight"": " + "" + optionWeight + "" + @",
+           ""pass"": " + "\"" + optionPass + "\"" + @",
+           ""filter"": " + "" + optionFilter + "" + @",
+           ""guidelines"": " + "" + optionGuideLines + "" + @",
+           ""fastslow"": " + "" + optionFastSlow + "" + @",
+           ""arrow"": " + "" + optionArrow + "" + @",
+           ""name"": " + "\"" + optionName + "\"" + @",
+           ""character"": " + "" + optionCharacter + "" + @"
+        }";
+        //string jsonString = "{\"characterid\":" + optionCharacter + ",\"platformid\":1,\"rating\":3}";
+        HttpContent httpContent = new StringContent(System.Text.Json.JsonSerializer.Serialize(jsonString), Encoding.UTF8, "application/json");
+        var response = await _httpClient.PutAsync("api/option/UpdateProfile/" + optionRefSelected, httpContent);
+        if (response.IsSuccessStatusCode)
+        {
+            SnackbarService.Add("Card Updated", Severity.Success);
+            disabledUpdateCard = false;
+            optionPass = string.Empty;
+        }
+    }
+
+
+    protected async Task EditCardClick(MouseEventArgs e, string refid)
+    {
+        disabledLoadCard = true;
+        optionRefSelected = refid;
+        var response = await _httpClient.GetAsync("api/option/GetCardOption/" + refid);
+        response.EnsureSuccessStatusCode();
+        cardOption = await response.Content.ReadFromJsonAsync<string[][]>();
+
+        if (response.IsSuccessStatusCode)
+        {
+            string[][] allOption = cardOption;
+            optionName = allOption[0][25];
+            optionWeight = float.Parse(allOption[0][17]);
+            optionCharacter = int.Parse(allOption[0][4], System.Globalization.NumberStyles.HexNumber);
+            optionCombo = int.Parse(allOption[1][15]);
+            optionFilter = int.Parse(allOption[1][12]);
+            optionGuideLines = int.Parse(allOption[1][13]);
+            optionFastSlow = int.Parse(allOption[1][16]);
+            optionArrow = int.Parse(allOption[1][11]);
+            optionPass = string.Empty;
+            disabledLoadCard = false;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        //cardLoaded = false;
+        pcbID = string.Empty;
+        optionPass = string.Empty;
+        disabledLoadPCB = false;
+        errorPin = false;
+        var config = (SnackbarOptions options) =>
+        {
+            options.DuplicatesBehavior = SnackbarDuplicatesBehavior.Prevent;
+        };
+        SnackbarService.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+        SnackbarService.Configuration.HideTransitionDuration = 250;
+        SnackbarService.Configuration.ShowTransitionDuration = 250;
+    }
+}

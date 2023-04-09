@@ -1,0 +1,7 @@
+Shared/bin/
+Shared/obj/
+Client/bin/
+Client/obj/
+Server/bin/
+Server/obj/
+.vs/
