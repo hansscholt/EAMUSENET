@@ -83,18 +83,21 @@ namespace eamuse
         [BsonElement(elementName: "name")]
         public string name { get; set; }
 
-        [BsonElement(elementName: "pcbid")]
-        public string pcbid { get; set; }
+        public string songtitle { get; set; }
+        public string artist { get; set; }
+        public int difficultynumber { get; set; }
+        public int series { get; set; }
+        //[BsonElement(elementName: "pcbid")]
+        //public string pcbid { get; set; }
 
-        [BsonElement(elementName: "refid")]
-        public string refid { get; set; }
+        //[BsonElement(elementName: "refid")]
+        //public string refid { get; set; }
 
-        [BsonElement(elementName: "shoparea")]
-        public string shoparea { get; set; }
+        //[BsonElement(elementName: "shoparea")]
+        //public string shoparea { get; set; }
 
-
-        [BsonElement(elementName: "scoreid")]
-        public int scoreid { get; set; }
+        //[BsonElement(elementName: "scoreid")]
+        //public int scoreid { get; set; }
 
         [BsonElement(elementName: "cardid")]
         public int cardid { get; set; }

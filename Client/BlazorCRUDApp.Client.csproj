@@ -9,6 +9,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Asset\Grades\grade0.png" />
+    <None Include="wwwroot\Asset\Grades\grade1.png" />
+    <None Include="wwwroot\Asset\Grades\grade10.png" />
+    <None Include="wwwroot\Asset\Grades\grade11.png" />
+    <None Include="wwwroot\Asset\Grades\grade12.png" />
+    <None Include="wwwroot\Asset\Grades\grade13.png" />
+    <None Include="wwwroot\Asset\Grades\grade14.png" />
+    <None Include="wwwroot\Asset\Grades\grade15.png" />
+    <None Include="wwwroot\Asset\Grades\grade2.png" />
+    <None Include="wwwroot\Asset\Grades\grade3.png" />
+    <None Include="wwwroot\Asset\Grades\grade4.png" />
+    <None Include="wwwroot\Asset\Grades\grade5.png" />
+    <None Include="wwwroot\Asset\Grades\grade6.png" />
+    <None Include="wwwroot\Asset\Grades\grade7.png" />
+    <None Include="wwwroot\Asset\Grades\grade8.png" />
+    <None Include="wwwroot\Asset\Grades\grade9.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0-rc.2.21480.10" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0-rc.2.21480.10" PrivateAssets="all" />
     <PackageReference Include="MudBlazor" Version="6.2.0" />

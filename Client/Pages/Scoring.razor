@@ -7,28 +7,60 @@
 
 <MudTable Items="@scoreList" Dense="true" Hover="true" SortLabel="Sort By" FixedHeader="true" FixedFooter="true">
     <HeaderContent>
-        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.id)">Song</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.name)">Song</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.series)">Series</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.notetype)">Difficulty</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.clearkind)">Rank</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.rank)">Rank</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.score)">Score</MudTableSortLabel></MudTh>
-        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.judge_perfect)">Result</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.judge_marvelous)">Result</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.name)">Player</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel InitialDirection="SortDirection.Descending" SortBy="new Func<Score, object>(x=>x.date)">Date</MudTableSortLabel></MudTh>
     </HeaderContent>
     <RowTemplate>
         <MudTd DataLabel="Song">
-            <MudText Typo="Typo.body2">TITLE</MudText>
-            <MudText Typo="Typo.caption">ARTIST</MudText>
+            <MudText Typo="Typo.body2">@context.songtitle</MudText>
+            <MudText Typo="Typo.caption">@context.artist</MudText>
         </MudTd>
-        <MudTd DataLabel="Difficulty">@context.notetype</MudTd>
-        <MudTd DataLabel="Rank">@context.clearkind</MudTd>
+        <MudTd DataLabel="Series">@SeriesString(context.series)</MudTd>
+       
+        @switch (context.notetype)
+        {
+            case 0:
+                <MudTd Style="@($"color:{Colors.Blue.Lighten3}; font-weight: bolder;")" DataLabel="Difficulty">@context.difficultynumber</MudTd>
+                break;
+            case 1:
+            case 5:
+                <MudTd Style="@($"color:{Colors.Yellow.Lighten2}; font-weight: bolder;")" DataLabel="Difficulty">@context.difficultynumber</MudTd>
+                break;
+            case 2:
+            case 6:
+                <MudTd Style="@($"color:{Colors.Red.Accent4}; font-weight: bolder;")" DataLabel="Difficulty">@context.difficultynumber</MudTd>
+                break;
+            case 3:
+            case 7:
+                <MudTd Style="@($"color:{Colors.Green.Lighten2}; font-weight: bolder;")" DataLabel="Difficulty">@context.difficultynumber</MudTd>
+                break;
+            case 4:
+            case 8:
+                <MudTd Style="@($"color:{Colors.Purple.Lighten2}; font-weight: bolder;")" DataLabel="Difficulty">@context.difficultynumber</MudTd>
+                break;
+            default:
+                break;
+        }
+
+
+        <MudTd DataLabel="Rank"><MudImage Src="@($"Asset/Grades/grade{@context.rank}.png")" Height="32" /></MudTd>
         <MudTd DataLabel="Score">@context.score</MudTd>
         <MudTd DataLabel="Result">
-            <MudText Typo="Typo.body2">1</MudText>
-            <MudText Typo="Typo.body2">2</MudText>
-            <MudText Typo="Typo.body2">3</MudText>
-            <MudText Typo="Typo.body2">4</MudText>
+            <MudText Typo="Typo.caption" Style="@($"color:{Colors.Yellow.Lighten5};")">@context.judge_marvelous</MudText>
+            <MudText Typo="Typo.caption" Style="@($"color:{Colors.Yellow.Lighten2};")">@context.judge_perfect</MudText>
+            <MudText Typo="Typo.caption" Style="@($"color:{Colors.Green.Lighten2};")">@context.judge_great</MudText>
+            <MudText Typo="Typo.caption" Style="@($"color:{Colors.Blue.Lighten3};")">@context.judge_good</MudText>
+            @*<MudText Typo="Typo.caption" Style="@($"color:{Colors.Purple.Lighten2};")">@context.judge_boo</MudText>*@
+            <MudText Typo="Typo.caption" Style="@($"color:{Colors.Red.Accent4};")">@context.judge_miss</MudText>
         </MudTd>
-        <MudTd DataLabel="Date">@context.date</MudTd>
+        <MudTd DataLabel="Player">@context.name</MudTd>
+        <MudTd DataLabel="Date">@TimeOffset(context.date)</MudTd>
     </RowTemplate>
     <PagerContent>
         <MudTablePager PageSizeOptions="new int[]{50, 100}" />
@@ -40,9 +72,42 @@
     protected override async Task OnInitializedAsync()
     {
         var response = await _httpClient.GetAsync("api/scoring/GetAllScore");
+        //var response = await _httpClient.GetAsync("api/scoring/GetAllMaxScore");
         response.EnsureSuccessStatusCode();
         scoreList = await response.Content.ReadFromJsonAsync<List<Score>>();
 
         //Elements = await httpClient.GetFromJsonAsync<List<Element>>("webapi/periodictable");
+    }
+
+    string SeriesString(int iSerie)
+    {
+        switch (iSerie)
+        {
+            case 20: return "DDR A3"; break;
+            case 19: return "DDR A20 PLUS"; break;
+            case 18: return "DDR A20"; break;
+            case 17: return "DDR A"; break;
+            case 16: return "DDR 2014"; break;
+            case 15: return "DDR 2014"; break;
+            case 14: return "DDR 2013"; break;
+            case 13: return "DDR X3 VS 2ndMIX"; break;
+            case 12: return "DDR X2"; break;
+            case 11: return "DDR X"; break;
+            case 10: return "DDR SuperNOVA 2"; break;
+            case 9: return "DDR SuperNOVA"; break;
+            case 8: return "DDR EXTREME"; break;
+            case 7: return "DDRMAX2"; break;
+            case 6: return "DDRMAX"; break;
+            case 5: return "DDR 5thMIX"; break;
+            case 4: return "DDR 4thMIX"; break;
+            case 3: return "DDR 3rdMIX"; break;
+            case 2: return "DDR 2ndMIX"; break;
+            case 1: return "DDR 1stMIX"; break;
+            default: return "-"; break;
+        }    }
+
+    DateTime TimeOffset(DateTime cardtime)
+    {
+        return cardtime.AddHours(3);//not sure what time is the server, but this adjust the time to Eastern FOR NOW
     }
 }

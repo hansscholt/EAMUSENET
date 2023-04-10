@@ -221,7 +221,7 @@ namespace eamuse.Controllers
 
 
                     string url = "http://199.102.48.162/core";
-                    url = "http://localhost:5091/core";
+                    //url = "http://localhost:5091/core";
 
                     //string urls = Request.Scheme + "://" + Request.Host.Host;
                     //string url = urls + "/core";
@@ -1431,7 +1431,6 @@ namespace eamuse.Controllers
                             score.cardid = currentCard.id;
                             score.date = DateTime.Now;
 
-
                             MSSQLConnection.InsertScore(score);
                             //currentScore.area = int.Parse(decodedString[1], System.Globalization.NumberStyles.HexNumber);
                             //currentScore.code = int.Parse(decodedString[26].Replace("-", string.Empty));
@@ -1456,15 +1455,22 @@ namespace eamuse.Controllers
                     {
                         //Card currentCard = MongoDBConnector.cardsCollection.Find(Builders<Card>.Filter.Eq(s => s.refid, refid)).FirstOrDefault();
                         XElement grade = playerdataCall.Element("data").Element("grade");
-                        XElement golden_league = playerdataCall.Element("data").Element("golden_league");
-                        currentCard.single_grade = (int)grade.Element("single_grade");
-                        currentCard.double_grade = (int)grade.Element("double_grade");
+                        if (grade != null)
+                        {
+                            currentCard.single_grade = (int)grade.Element("single_grade");
+                            currentCard.double_grade = (int)grade.Element("double_grade");
+                        }
 
-                        currentCard.name = playerdataCall.Element("data").Element("name").Value.ToUpper();
-                        currentCard.golden_class = (int)golden_league.Element("current").Element("league_class");
-                        currentCard.golden_count = (int)golden_league.Element("current").Element("total_play_count");
-                        currentCard.golden_id = (int)golden_league.Element("current").Element("id");
-                        currentCard.golden_score = (int)golden_league.Element("current").Element("total_exscore");
+                        XElement golden_league = playerdataCall.Element("data").Element("golden_league");
+                        if (golden_league != null)
+                        {
+                            currentCard.name = playerdataCall.Element("data").Element("name").Value.ToUpper();
+                            currentCard.golden_class = (int)golden_league.Element("current").Element("league_class");
+                            currentCard.golden_count = (int)golden_league.Element("current").Element("total_play_count");
+                            currentCard.golden_id = (int)golden_league.Element("current").Element("id");
+                            currentCard.golden_score = (int)golden_league.Element("current").Element("total_exscore");
+                        }
+                        
                         currentCard.date_last = DateTime.Now;
 
                         //MongoDBConnector.cardsCollection.ReplaceOne(Builders<Card>.Filter.Eq(c => c.refid, refid), currentCard);
@@ -1571,7 +1577,7 @@ namespace eamuse.Controllers
                         //var listScores = MongoDBConnector.scoreCollection.Find(Builders<Score>.Filter.Empty).SortBy(s => s.score).ThenByDescending(s => s.score).ToList();
                         //listScores = listScores.GroupBy(s => s.mcode).Select(s => s.First()).ToList();
 
-                        List<Score> listScores = MSSQLConnection.GetMaxScores();
+                        List<Score> listScores = MSSQLConnection.GetScores(true);
 
                         foreach (var record in listScores)
                         {

@@ -500,19 +500,31 @@ namespace BlazorCRUDApp.Shared
                 }
             }
         }
-        public static List<Score> GetMaxScores()
+        public static List<Score> GetScores(bool maxScores)
         {
             string connsString = ConnectionString();
             using (SqlConnection conn = new SqlConnection(connsString))
             {
                 conn.Open();
 
-                using (SqlCommand command = new SqlCommand(string.Format("select * " +
+                string query = string.Empty;
+                if (maxScores)
+                {
+                    query = string.Format("select * " +
                     "from( select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
-                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, ROW_NUMBER() " +
+                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, score_rank, ROW_NUMBER() " +
                     "OVER(PARTITION BY score_mcode, score_notetype ORDER BY score_score desc) as rn " +
                     "from score inner join [card] on [card].card_id = score.score_cardid ) as a " +
-                    "where rn = 1"), conn))
+                    "where rn = 1");
+                }
+                else
+                {
+                    query = string.Format("select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
+                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, score_rank " +
+                    "from score inner join [card] on [card].card_id = score.score_cardid");
+                }
+
+                using (SqlCommand command = new SqlCommand(query, conn))
                 {
                     try
                     {
@@ -543,6 +555,7 @@ namespace BlazorCRUDApp.Shared
                                     fastcount = (int)result["score_fast"],
                                     slowcount = (int)result["score_slow"],
                                     date = (DateTime)result["score_date"],
+                                    rank = (int)result["score_rank"],
                                     name = result["card_name"].ToString()
                                 };
                                 scores.Add(s); 
@@ -572,7 +585,7 @@ namespace BlazorCRUDApp.Shared
 
                 using (SqlCommand command = new SqlCommand(string.Format("select * " +
                     "from( select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
-                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, ROW_NUMBER() " +
+                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, score_rank, ROW_NUMBER() " +
                     "OVER(PARTITION BY score_mcode, score_notetype ORDER BY score_score desc) as rn " +
                     "from score inner join [card] on [card].card_id = score.score_cardid inner join player on player.player_id = [card].card_playerid where player.player_area = {0}) as a " +
                     "where rn = 1", area), conn))
@@ -606,6 +619,7 @@ namespace BlazorCRUDApp.Shared
                                     fastcount = (int)result["score_fast"],
                                     slowcount = (int)result["score_slow"],
                                     date = (DateTime)result["score_date"],
+                                    rank = (int)result["score_rank"],
                                     name = result["card_name"].ToString()
                                 };
                                 scores.Add(s);
@@ -636,7 +650,7 @@ namespace BlazorCRUDApp.Shared
 
                 using (SqlCommand command = new SqlCommand(string.Format("select * " +
                     "from( select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
-                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, ROW_NUMBER() " +
+                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, score_rank, ROW_NUMBER() " +
                     "OVER(PARTITION BY score_mcode, score_notetype ORDER BY score_score desc) as rn " +
                     "from score inner join [card] on [card].card_id = score.score_cardid where [card].card_code = {0}) as a " +
                     "where rn = 1", code), conn))
@@ -670,6 +684,7 @@ namespace BlazorCRUDApp.Shared
                                     fastcount = (int)result["score_fast"],
                                     slowcount = (int)result["score_slow"],
                                     date = (DateTime)result["score_date"],
+                                    rank = (int)result["score_rank"],
                                     name = result["card_name"].ToString()
                                 };
                                 scores.Add(s);
@@ -700,7 +715,7 @@ namespace BlazorCRUDApp.Shared
 
                 using (SqlCommand command = new SqlCommand(string.Format("select * " +
                     "from( select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
-                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, ROW_NUMBER() " +
+                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date,score_rank, ROW_NUMBER() " +
                     "OVER(PARTITION BY score_mcode, score_notetype ORDER BY score_score desc) as rn " +
                     "from score inner join [card] on [card].card_id = score.score_cardid inner join player on player.player_id = [card].card_playerid where player.player_pcbid = '{0}') as a " +
                     "where rn = 1", pcbid), conn))
@@ -734,6 +749,7 @@ namespace BlazorCRUDApp.Shared
                                     fastcount = (int)result["score_fast"],
                                     slowcount = (int)result["score_slow"],
                                     date = (DateTime)result["score_date"],
+                                    rank = (int)result["score_rank"],
                                     name = result["card_name"].ToString()
                                 };
                                 scores.Add(s);
@@ -765,7 +781,7 @@ namespace BlazorCRUDApp.Shared
 
                 using (SqlCommand command = new SqlCommand(string.Format("select * " +
                     "from( select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
-                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, ROW_NUMBER() " +
+                    "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, score_rank, ROW_NUMBER() " +
                     "OVER(PARTITION BY score_mcode, score_notetype ORDER BY score_score desc) as rn " +
                     "from score inner join [card] on [card].card_id = score.score_cardid where [card].card_refid = '{0}') as a " +
                     "where rn = 1", refid), conn))
@@ -799,6 +815,7 @@ namespace BlazorCRUDApp.Shared
                                     fastcount = (int)result["score_fast"],
                                     slowcount = (int)result["score_slow"],
                                     date = (DateTime)result["score_date"],
+                                    rank = (int)result["score_rank"],
                                     name = result["card_name"].ToString()
                                 };
                                 scores.Add(s);
@@ -882,10 +899,10 @@ namespace BlazorCRUDApp.Shared
                 using ( SqlCommand command = new SqlCommand(
                     string.Format("INSERT INTO score (score_mcode ,score_clearkind ,score_count ,score_ghostid ,score_score ,score_exscore, score_maxcombo " +
                     ",score_notetype ,score_marvelous ,score_perfect ,score_great ,score_good ,score_boo ,score_miss ,score_ok ,score_ng ,score_fast " +
-                    ",score_slow ,score_cardid, score_date) VALUES({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},'{19}')",
+                    ",score_slow ,score_cardid, score_date, score_rank) VALUES({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},'{19}',{20})",
                     score.mcode, score.clearkind, score.count, score.ghostid, score.score, score.exscore, score.maxcombo, 
                     score.notetype, score.judge_marvelous, score.judge_perfect, score.judge_great, score.judge_good, score.judge_boo, score.judge_miss, score.judge_ok, score.judge_ng, score.fastcount,
-                    score.slowcount, score.cardid, score.date),
+                    score.slowcount, score.cardid, score.date, score.rank),
                     conn))
                 {
                     try
