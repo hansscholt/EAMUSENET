@@ -10,9 +10,10 @@
 <PageTitle>My Info</PageTitle>
 @*<p role="status">Current count: @currentCount</p>*@
 
+
 <MudGrid Justify="Justify.FlexStart">
     <MudItem xs="6">
-        <MudTextField @bind-Value="pcbID" MaxLength="20"
+        <MudTextField @bind-Value="pcbID" MaxLength="20" Margin="Margin.Dense"
                         Label="PCBID" HelperText="Enter your unique 20 length string" Variant="Variant.Text" />
     </MudItem>
     <MudItem xs="6">
@@ -175,19 +176,71 @@
     <MudGrid Justify="Justify.FlexStart">
         <MudItem xs="4">
             <MudTextField @bind-Value="optionName" Immediate MaxLength="8" TextChanged="(value) => optionName = value.ToUpper()"
-                        Label="NAME" Variant="Variant.Text" />
-            </MudItem>
-            <MudItem xs="4">
+                      Label="NAME" Variant="Variant.Text" Margin="Margin.Dense" />
+        </MudItem>
+        <MudItem xs="4">
             <MudTextField Mask="@(new PatternMask("0000"))" @bind-Value="optionPass" Error="errorPin" ErrorText="Not a valid PIN" MaxLength="4"
-                        Label="NEW PIN" Variant="Variant.Text" />
-            </MudItem>
-            <MudItem xs="4">
-            <MudTextField @bind-Value="optionWeight" Format="F1" MaxLength="3"
+                    Label="NEW PIN" Variant="Variant.Text" Margin="Margin.Dense" />
+        </MudItem>
+        <MudItem xs="4">
+            <MudTextField @bind-Value="optionWeight" Format="F1" MaxLength="3" Margin="Margin.Dense"
                         Label="WEIGHT" Variant="Variant.Text" HelperText="Double numbers, enter 0 to disable" />
-            </MudItem>
-            </MudGrid>
+        </MudItem>
+    </MudGrid>
+
+    <MudDivider DividerType="DividerType.Middle" Class="my-6"/>
+    <MudGrid Justify="Justify.FlexStart">
+        <MudItem xs="4">
+            <MudTextField @bind-Value="rival1code" MaxLength="8" Margin="Margin.Dense" 
+                      Label="@rival1name" HelperText="Rival 1 DDR Code" Variant="Variant.Text" />
+            <MudButton Variant="Variant.Outlined" Color="Color.Primary" OnClick="VerifyRival1" Disabled="disabledRival1">
+                @if (disabledRival1)
+                {
+                    <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                    <MudText Class="ms-2">Processing</MudText>
+                }
+                else
+                {
+                    <MudText>Save Rival</MudText>
+                }                
+            </MudButton>
+        </MudItem>
+        <MudItem xs="4">
+            <MudTextField @bind-Value="rival2code" MaxLength="8" Margin="Margin.Dense" 
+                      Label="@rival2name" HelperText="Rival 2 DDR Code" Variant="Variant.Text" />
+            <MudButton Variant="Variant.Outlined" Color="Color.Primary" OnClick="VerifyRival2" Disabled="disabledRival2">
+                @if (disabledRival2)
+                {
+                    <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                    <MudText Class="ms-2">Processing</MudText>
+                }
+                else
+                {
+                    <MudText>Save Rival</MudText>
+                }
+            </MudButton>
+        </MudItem>
+        <MudItem xs="4">
+            <MudTextField @bind-Value="rival3code" MaxLength="8" Margin="Margin.Dense"
+                      Label="@rival3name" HelperText="Rival 3 DDR Code" Variant="Variant.Text" />
+            <MudButton Variant="Variant.Outlined" Color="Color.Primary" OnClick="VerifyRival3" Disabled="disabledRival3">
+                @if (disabledRival3)
+                {
+                    <MudProgressCircular Class="ms-n1" Size="Size.Small" Indeterminate="true" />
+                    <MudText Class="ms-2">Processing</MudText>
+                }
+                else
+                {
+                    <MudText>Save Rival</MudText>
+                }
+            </MudButton>
+        </MudItem>
+    </MudGrid>
+    
 
     <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+
+
     <MudButton Variant="Variant.Outlined" Disabled="disabledUpdateCard" Color="Color.Primary" OnClick="UpdateProfileClick">
         @if (disabledUpdateCard)
         {
@@ -206,6 +259,9 @@
     string pcbID { get; set; }
 
     bool disabledLoadPCB;
+    bool disabledRival1;
+    bool disabledRival2;
+    bool disabledRival3;
     bool disabledLoadCard;
     bool disabledUpdateCard;
     bool errorPin;
@@ -228,6 +284,16 @@
     string optionName;
     string optionPass;
     float optionWeight;
+
+    string rival1name;
+    string rival2name;
+    string rival3name;
+
+    string rival1code;
+    string rival2code;
+    string rival3code;
+
+    Dictionary<string, object> theSelectedValues;
 
     bool InvalidPCB()
     {
@@ -254,8 +320,8 @@
 
     protected async Task LoadCardsClick(MouseEventArgs e)
     {
-        disabledLoadPCB = true;  
-
+        disabledLoadPCB = true;
+        cardOption = null;
         if (InvalidPCB())
         {
             SnackbarService.Add("Invalid PCB", Severity.Error);
@@ -288,6 +354,9 @@
             disabledLoadCard = false;
             disabledUpdateCard = false;
             optionPass = string.Empty;
+            disabledRival1 = false;
+            disabledRival2 = false;
+            disabledRival3 = false;
             //cardLoaded = true;
         }
     }
@@ -331,11 +400,18 @@
 
     protected async Task EditCardClick(MouseEventArgs e, string refid)
     {
+        rival1code = null;
+        rival2code = null;
+        rival3code = null;
+        rival1name = "RIVAL 1";
+        rival2name = "RIVAL 2";
+        rival3name = "RIVAL 3";
         disabledLoadCard = true;
         optionRefSelected = refid;
         var response = await _httpClient.GetAsync("api/option/GetCardOption/" + refid);
         response.EnsureSuccessStatusCode();
         cardOption = await response.Content.ReadFromJsonAsync<string[][]>();
+
 
         if (response.IsSuccessStatusCode)
         {
@@ -349,6 +425,54 @@
             optionFastSlow = int.Parse(allOption[1][16]);
             optionArrow = int.Parse(allOption[1][11]);
             optionPass = string.Empty;
+            if (allOption[3][9] != "0" && allOption[3][9] != "" && allOption[3][9] != null)
+            {
+                rival1code = int.Parse(allOption[3][9], System.Globalization.NumberStyles.HexNumber).ToString(); 
+                response = await _httpClient.GetAsync("api/option/GetCardByCode/" + rival1code.ToString());
+                response.EnsureSuccessStatusCode();
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var card = await response.Content.ReadFromJsonAsync<Card>();
+                    rival1name = card.name;
+                } 
+                else
+                {
+                    rival1name = "RIVAL 1";
+                    rival1code = null;
+                }
+            }
+            if (allOption[3][10] != "0" && allOption[3][10] != "" && allOption[3][10] != null)
+            {
+                rival2code = int.Parse(allOption[3][10], System.Globalization.NumberStyles.HexNumber).ToString(); 
+                response = await _httpClient.GetAsync("api/option/GetCardByCode/" + rival2code.ToString());
+                response.EnsureSuccessStatusCode();
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var card = await response.Content.ReadFromJsonAsync<Card>();
+                    rival2name = card.name;
+                }
+                else
+                {
+                    rival2name = "RIVAL 2";
+                    rival2code = null;
+                }
+            }
+            if (allOption[3][11] != "0" && allOption[3][11] != "" && allOption[3][11] != null)
+            {
+                rival3code = int.Parse(allOption[3][11], System.Globalization.NumberStyles.HexNumber).ToString();
+                response = await _httpClient.GetAsync("api/option/GetCardByCode/" + rival3code.ToString());
+                response.EnsureSuccessStatusCode();
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var card = await response.Content.ReadFromJsonAsync<Card>();
+                    rival3name = card.name;
+                }
+                else
+                {
+                    rival3name = "RIVAL 3";
+                    rival3code = null;
+                }
+            }
             disabledLoadCard = false;
         }
     }
@@ -367,5 +491,81 @@
         SnackbarService.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
         SnackbarService.Configuration.HideTransitionDuration = 250;
         SnackbarService.Configuration.ShowTransitionDuration = 250;
+
+    }
+    protected async Task VerifyRival1(MouseEventArgs e)
+    {
+        disabledRival1 = true;
+        bool isNumber = int.TryParse(rival1code, out _);      
+        if (rival1code.Length == 0 || (rival1code.Length == 8 && isNumber))
+        {
+            var jsonString = @"{
+               ""rivalnumber"": " + "1" + @",
+               ""rivalcode"": " + "\"" + rival1code + "\"" + @"
+            }";
+            //string jsonString = "{\"characterid\":" + optionCharacter + ",\"platformid\":1,\"rating\":3}";
+            HttpContent httpContent = new StringContent(System.Text.Json.JsonSerializer.Serialize(jsonString), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync("api/option/UpdateRival/" + optionRefSelected, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                SnackbarService.Add("Rival Updated", Severity.Success);
+                disabledRival1 = false;
+            }            
+        }
+        else
+        {
+            SnackbarService.Add("Invalid Rival Code", Severity.Error);
+            disabledRival1 = false;
+        }        
+    }
+    protected async Task  VerifyRival2(MouseEventArgs e)
+    {
+        disabledRival2 = true;
+        bool isNumber = int.TryParse(rival2code, out _);      
+        if (rival2code.Length == 0 || (rival2code.Length == 8 && isNumber))
+        {
+            var jsonString = @"{
+               ""rivalnumber"": " + "2" + @",
+               ""rivalcode"": " + "\"" + rival2code + "\"" + @"
+            }";
+            //string jsonString = "{\"characterid\":" + optionCharacter + ",\"platformid\":1,\"rating\":3}";
+            HttpContent httpContent = new StringContent(System.Text.Json.JsonSerializer.Serialize(jsonString), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync("api/option/UpdateRival/" + optionRefSelected, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                SnackbarService.Add("Rival Updated", Severity.Success);
+                disabledRival2 = false;
+            }            
+        }
+        else
+        {
+            SnackbarService.Add("Invalid Rival Code", Severity.Error);
+            disabledRival2 = false;
+        }  
+    }
+    protected async Task VerifyRival3(MouseEventArgs e)
+    {
+        disabledRival3 = true;
+        bool isNumber = int.TryParse(rival3code, out _);      
+        if (rival3code.Length == 0 || (rival3code.Length == 8 && isNumber))
+        {
+            var jsonString = @"{
+               ""rivalnumber"": " + "3" + @",
+               ""rivalcode"": " + "\"" + rival3code + "\"" + @"
+            }";
+            //string jsonString = "{\"characterid\":" + optionCharacter + ",\"platformid\":1,\"rating\":3}";
+            HttpContent httpContent = new StringContent(System.Text.Json.JsonSerializer.Serialize(jsonString), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync("api/option/UpdateRival/" + optionRefSelected, httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                SnackbarService.Add("Rival Updated", Severity.Success);
+                disabledRival3 = false;
+            }            
+        }
+        else
+        {
+            SnackbarService.Add("Invalid Rival Code", Severity.Error);
+            disabledRival3 = false;
+        }  
     }
 }

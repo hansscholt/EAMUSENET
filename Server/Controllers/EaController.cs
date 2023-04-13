@@ -268,6 +268,14 @@ namespace eamuse.Controllers
             else
                 Console.WriteLine("system :" + method);
             
+
+
+
+
+
+
+
+
             string algo = "lz77";
             byte[] resData = Util.CompressRequest(outputDocument, amuse, algo);
 
@@ -283,11 +291,20 @@ namespace eamuse.Controllers
         void PCBTracker(string method)
         {
             string amuse = HttpContext.Request.Headers["X-Eamuse-Info"];
+            string compress = HttpContext.Request.Headers["X-Compress"];
 
             XDocument outputDocument = new XDocument();
             //_logger.LogInformation("|||||||||||||||||method: " + method);
             if (method == "alive")
             {
+                byte[] byteData = Util.ExtractRequest(Request, amuse, compress);
+                KBinXML inputDocument = new KBinXML(byteData);
+                string hardid = inputDocument.Document.Element("call").Element("pcbtracker").Attribute("hardid").Value.ToUpper();
+                if (hardid != "5BAE39118A6927555FC9")
+                {
+                    Response.StatusCode = 405;
+                    return;
+                }
                 TimeSpan t = DateTime.UtcNow - new DateTime(1970, 1, 1);
                 ulong secondsSinceEpoch = (ulong)t.TotalMilliseconds;
 
@@ -314,10 +331,12 @@ namespace eamuse.Controllers
         void Package(string method)
         {
             string amuse = HttpContext.Request.Headers["X-Eamuse-Info"];
+            string compress = HttpContext.Request.Headers["X-Compress"];
+
             //_logger.LogInformation("|||||||||||||||||method: " + method);
             XDocument data = new XDocument();
             if (method == "list")
-                data = new XDocument(new XElement("response", new XElement("package", new XAttribute("expire", 1200), new XAttribute("status", 0))));   
+                data = new XDocument(new XElement("response", new XElement("package", new XAttribute("expire", 1200), new XAttribute("status", 0))));
             else
                 Console.WriteLine("package: " + method);
 
@@ -363,6 +382,7 @@ namespace eamuse.Controllers
         void Facility(string method)
         {
             string amuse = HttpContext.Request.Headers["X-Eamuse-Info"];
+            string compress = HttpContext.Request.Headers["X-Compress"];
 
             XDocument outputDocument = new XDocument();
 
@@ -433,6 +453,7 @@ namespace eamuse.Controllers
         void PCBEvent(string method)
         {
             string amuse = HttpContext.Request.Headers["X-Eamuse-Info"];
+            string compress = HttpContext.Request.Headers["X-Compress"];
 
             XDocument outputDocument = new XDocument();
 

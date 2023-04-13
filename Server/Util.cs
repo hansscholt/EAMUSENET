@@ -21,6 +21,9 @@ namespace eamuse
                         0x8d, 0x93, 0xb1, 0x24, 0x55, 0x03, 0x5b, 0x6d, 0xf0, 0xd8, 0x20, 0x5d, 0xf5 };
         public static byte[] ExtractRequest(HttpRequest r, string amuse, string compress)
         {
+            if (compress == null)
+                compress = "";
+
             //byte[] olddata;
             byte[] byteData;
             using (var ms = new MemoryStream((int)(r.ContentLength ?? 512L)))

@@ -1,4 +1,6 @@
-﻿using eamuse;
+﻿using Amazon.Util.Internal;
+using Azure;
+using eamuse;
 using eamuse.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.VisualBasic.FileIO;
@@ -209,6 +211,62 @@ namespace BlazorCRUDApp.Shared
             }
         }
 
+        public static void UpdateRival(string refid, Dictionary<string, object> jsonUpdate)
+        {
+            int iRivalNumber = int.Parse(jsonUpdate["rivalnumber"].ToString());
+            string sRivalCode = jsonUpdate["rivalcode"].ToString();
+
+
+            Option option = GetOption(refid);
+            byte[] bData = Convert.FromBase64String(option.rival);
+            var rivalList = new List<string>(Encoding.UTF8.GetString(bData).Split(','));
+            if (iRivalNumber == 1)
+            {
+                if (String.IsNullOrEmpty(sRivalCode))
+                {
+                    rivalList[1] = "0";
+                    rivalList[9] = "";
+                }
+                else
+                {
+                    rivalList[1] = "1";
+                    rivalList[9] = int.Parse(sRivalCode).ToString("X");
+                }
+            }
+            else if (iRivalNumber == 2)
+            {
+                if (String.IsNullOrEmpty(sRivalCode))
+                {
+                    rivalList[2] = "0";
+                    rivalList[10] = "";
+                }
+                else
+                {
+                    rivalList[2] = "1";
+                    rivalList[10] = int.Parse(sRivalCode).ToString("X");
+                }
+            }
+            else if (iRivalNumber == 3)
+            {
+                if (String.IsNullOrEmpty(sRivalCode))
+                {
+                    rivalList[3] = "0";
+                    rivalList[11] = "";
+                }
+                else
+                {
+                    rivalList[3] = "1";
+                    rivalList[11] = int.Parse(sRivalCode).ToString("X");
+                }
+            }
+            // = icharacter.ToString("X");
+
+            string sRival = String.Join(",", rivalList);
+            option.rival = Convert.ToBase64String(Encoding.Convert(Encoding.UTF8, Encoding.UTF8, Encoding.UTF8.GetBytes(sRival)));
+
+            UpdateOption(option);
+        }
+
         public static void UpdateProfile(string refid, Dictionary<string, object> jsonUpdate)
         {
             int icombo = int.Parse(jsonUpdate["combo"].ToString());
@@ -337,8 +395,13 @@ namespace BlazorCRUDApp.Shared
                     {
                         using (var result = command.ExecuteReader())
                         {
-                            Card c = new Card();
                             result.Read();
+                            if (!result.HasRows)
+                            {
+                                
+                                return null;
+                            }
+                            Card c = new Card();                            
                             c.id = (int)result["card_id"];
                             c.refid = result["card_refid"].ToString();
                             c.cardid = result["card_cardid"].ToString();

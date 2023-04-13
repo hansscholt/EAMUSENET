@@ -5,7 +5,12 @@
 
 <PageTitle>Scoring</PageTitle>
 
-<MudTable Items="@scoreList" Dense="true" Hover="true" SortLabel="Sort By" FixedHeader="true" FixedFooter="true">
+<MudTabs Outlined="true">
+    <MudTabPanel Disabled="@_loading" OnClick="GetMaxScore" Text="Max Scores" />
+    <MudTabPanel Disabled="@_loading" OnClick="GetAllScore" Text="All Scores" />
+</MudTabs>
+<MudTable Items="@scoreList" Dense="true" Hover="true" SortLabel="Sort By" FixedHeader="true" FixedFooter="true"
+          Loading="@_loading" LoadingProgressColor="Color.Info">
     <HeaderContent>
         <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.name)">Song</MudTableSortLabel></MudTh>
         <MudTh><MudTableSortLabel SortBy="new Func<Score, object>(x=>x.series)">Series</MudTableSortLabel></MudTh>
@@ -22,7 +27,7 @@
             <MudText Typo="Typo.caption">@context.artist</MudText>
         </MudTd>
         <MudTd DataLabel="Series">@SeriesString(context.series)</MudTd>
-       
+
         @switch (context.notetype)
         {
             case 0:
@@ -68,43 +73,68 @@
 </MudTable>
 
 @code {
+
+    private bool _loading;
+
     private List<Score> scoreList = new List<Score>();
     protected override async Task OnInitializedAsync()
     {
-        var response = await _httpClient.GetAsync("api/scoring/GetAllScore");
-        //var response = await _httpClient.GetAsync("api/scoring/GetAllMaxScore");
+        await GetMaxScore();
+    }
+
+    async Task GetMaxScore()
+    {
+        _loading = true;
+        var response = await _httpClient.GetAsync("api/scoring/GetMaxScore");
         response.EnsureSuccessStatusCode();
         scoreList = await response.Content.ReadFromJsonAsync<List<Score>>();
 
-        //Elements = await httpClient.GetFromJsonAsync<List<Element>>("webapi/periodictable");
+        if (response.IsSuccessStatusCode)
+        {
+            _loading = false;
+        }
+    }
+
+    async Task GetAllScore()
+    {
+        _loading = true;
+        var response = await _httpClient.GetAsync("api/scoring/GetAllScore");
+        response.EnsureSuccessStatusCode();
+        scoreList = await response.Content.ReadFromJsonAsync<List<Score>>();
+
+        if (response.IsSuccessStatusCode)
+        {
+            _loading = false;
+        }
     }
 
     string SeriesString(int iSerie)
     {
         switch (iSerie)
         {
-            case 20: return "DDR A3"; break;
-            case 19: return "DDR A20 PLUS"; break;
-            case 18: return "DDR A20"; break;
-            case 17: return "DDR A"; break;
-            case 16: return "DDR 2014"; break;
-            case 15: return "DDR 2014"; break;
-            case 14: return "DDR 2013"; break;
-            case 13: return "DDR X3 VS 2ndMIX"; break;
-            case 12: return "DDR X2"; break;
-            case 11: return "DDR X"; break;
-            case 10: return "DDR SuperNOVA 2"; break;
-            case 9: return "DDR SuperNOVA"; break;
-            case 8: return "DDR EXTREME"; break;
-            case 7: return "DDRMAX2"; break;
-            case 6: return "DDRMAX"; break;
-            case 5: return "DDR 5thMIX"; break;
-            case 4: return "DDR 4thMIX"; break;
-            case 3: return "DDR 3rdMIX"; break;
-            case 2: return "DDR 2ndMIX"; break;
-            case 1: return "DDR 1stMIX"; break;
-            default: return "-"; break;
-        }    }
+            case 20: return "DDR A3";
+            case 19: return "DDR A20 PLUS";
+            case 18: return "DDR A20";
+            case 17: return "DDR A";
+            case 16:
+            case 15: return "DDR 2014";
+            case 14: return "DDR 2013";
+            case 13: return "DDR X3 VS 2ndMIX";
+            case 12: return "DDR X2";
+            case 11: return "DDR X";
+            case 10: return "DDR SuperNOVA 2";
+            case 9: return "DDR SuperNOVA";
+            case 8: return "DDR EXTREME";
+            case 7: return "DDRMAX2";
+            case 6: return "DDRMAX";
+            case 5: return "DDR 5thMIX";
+            case 4: return "DDR 4thMIX";
+            case 3: return "DDR 3rdMIX";
+            case 2: return "DDR 2ndMIX";
+            case 1: return "DDR 1stMIX";
+            default: return "-";
+        }
+    }
 
     DateTime TimeOffset(DateTime cardtime)
     {

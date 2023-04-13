@@ -53,6 +53,18 @@ namespace eamusenet.Server.Controllers
             //return await MongoDBConnector.GetUniqueSongCount(refid);
         }
 
+        [HttpGet("GetCardByCode/{ddrcode}")]
+        public async Task<Card> GetCardByCode(string ddrcode)
+        {            
+            Card c = MSSQLConnection.GetCardByCode(int.Parse(ddrcode));
+            if (c == null)            
+                Response.StatusCode = 204;            
+            else
+                Response.StatusCode = 200;
+            return c;
+            //return await MongoDBConnector.GetUniqueSongCount(refid);
+        }
+
         //[HttpGet("GetUniqueSongCount/{refid}")]
         //public async Task<int> GetUniqueSongCount(string refid)
         //{
@@ -72,7 +84,13 @@ namespace eamusenet.Server.Controllers
             MSSQLConnection.UpdateProfile(refid, jsonUpdate);
             //MongoDBConnector.UpdateProfile(refid, jsonUpdate);
         }
-        
+
+        [HttpPut("UpdateRival/{refid}")]
+        public async void UpdateRival(string refid, object content)
+        {
+            Dictionary<string, object> jsonUpdate = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, object>>(content.ToString());
+            MSSQLConnection.UpdateRival(refid, jsonUpdate);
+        }
         //// GET: OptionController/Details/5
         //public ActionResult Details(int id)
         //{
