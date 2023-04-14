@@ -1,0 +1,729 @@
+[2023-04-13 16:29:49.124 -04:00  INF]  User profile is available. Using 'C:\Users\hanss_nuxi99u\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-04-13 16:29:49.631 -04:00  INF]  Now listening on: http://localhost:5091
+[2023-04-13 16:29:49.633 -04:00  INF]  Application started. Press Ctrl+C to shut down.
+[2023-04-13 16:29:49.633 -04:00  INF]  Hosting environment: Development
+[2023-04-13 16:29:49.633 -04:00  INF]  Content root path: C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Server\
+[2023-04-13 16:29:51.607 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A6013%2Fdevtools%2Fbrowser%2Fab1be051-08b9-49bb-8665-367388e3297f - -
+[2023-04-13 16:29:52.105 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost/_framework/debug/ws-proxy?browser=ws%3A%2F%2F127.0.0.1%3A6013%2Fdevtools%2Fbrowser%2Fab1be051-08b9-49bb-8665-367388e3297f - - - 302 0 - 500.6977ms
+[2023-04-13 16:29:52.509 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/_framework/aspnetcore-browser-refresh.js - -
+[2023-04-13 16:29:52.514 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/_framework/aspnetcore-browser-refresh.js - - - 200 12001 application/javascript;+charset=utf-8 5.4008ms
+[2023-04-13 16:29:53.326 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/_vs/browserLink - -
+[2023-04-13 16:29:53.348 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/blazor.boot.json - -
+[2023-04-13 16:29:53.425 -04:00  INF]  Sending file. Request path: '/webui/_framework/blazor.boot.json'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json'
+[2023-04-13 16:29:53.425 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/blazor.boot.json - - - 200 22972 application/json 77.0714ms
+[2023-04-13 16:29:53.495 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.dll - -
+[2023-04-13 16:29:53.526 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.dll - -
+[2023-04-13 16:29:53.526 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.pdb - -
+[2023-04-13 16:29:53.542 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.pdb - -
+[2023-04-13 16:29:53.638 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 312.6168ms
+[2023-04-13 16:29:53.666 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Shared.dll.gz'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Shared.dll.gz'
+[2023-04-13 16:29:53.666 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Client.dll.gz'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Client.dll.gz'
+[2023-04-13 16:29:53.666 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Shared.pdb.gz'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Shared.pdb.gz'
+[2023-04-13 16:29:53.672 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Client.pdb.gz'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Client.pdb.gz'
+[2023-04-13 16:29:53.673 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.dll - - - 200 12727 application/octet-stream 178.4039ms
+[2023-04-13 16:29:53.673 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.dll - - - 200 31311 application/octet-stream 147.0832ms
+[2023-04-13 16:29:53.673 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.pdb - - - 200 37376 application/octet-stream 130.7608ms
+[2023-04-13 16:29:53.673 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.pdb - - - 200 11528 application/octet-stream 146.9212ms
+[2023-04-13 16:29:54.024 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.Forms.dll - -
+[2023-04-13 16:29:54.024 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/AWSSDK.SecurityToken.dll - -
+[2023-04-13 16:29:54.025 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Authorization.dll - -
+[2023-04-13 16:29:54.025 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Metadata.dll - -
+[2023-04-13 16:29:54.025 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Azure.Core.dll - -
+[2023-04-13 16:29:54.026 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Bcl.AsyncInterfaces.dll - -
+[2023-04-13 16:29:54.028 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.Web.dll - -
+[2023-04-13 16:29:54.028 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/DnsClient.dll - -
+[2023-04-13 16:29:54.028 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Azure.Identity.dll - -
+[2023-04-13 16:29:54.029 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll - -
+[2023-04-13 16:29:54.030 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.dll - -
+[2023-04-13 16:29:54.048 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Data.SqlClient.dll - -
+[2023-04-13 16:29:54.054 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.AspNetCore.Metadata.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Metadata.dll'
+[2023-04-13 16:29:54.054 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Bcl.AsyncInterfaces.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Bcl.AsyncInterfaces.dll'
+[2023-04-13 16:29:54.055 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Metadata.dll - - - 200 17024 application/octet-stream 29.7217ms
+[2023-04-13 16:29:54.055 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Bcl.AsyncInterfaces.dll - - - 200 14720 application/octet-stream 28.8229ms
+[2023-04-13 16:29:54.056 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XmlDocument.dll - -
+[2023-04-13 16:29:54.056 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll - -
+[2023-04-13 16:29:54.056 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XmlSerializer.dll - -
+[2023-04-13 16:29:54.056 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.AspNetCore.Components.Forms.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.dll'
+[2023-04-13 16:29:54.056 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.AspNetCore.Authorization.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.dll'
+[2023-04-13 16:29:54.057 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.Forms.dll - - - 200 33408 application/octet-stream 32.7933ms
+[2023-04-13 16:29:54.057 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Authorization.dll - - - 200 46208 application/octet-stream 32.0108ms
+[2023-04-13 16:29:54.058 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll - -
+[2023-04-13 16:29:54.059 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.dll - -
+[2023-04-13 16:29:54.060 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.dll - -
+[2023-04-13 16:29:54.063 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.XmlDocument.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XmlDocument.dll'
+[2023-04-13 16:29:54.063 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/AWSSDK.Core.dll - -
+[2023-04-13 16:29:54.063 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XmlDocument.dll - - - 200 16048 application/octet-stream 7.7903ms
+[2023-04-13 16:29:54.064 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/WindowsBase.dll - -
+[2023-04-13 16:29:54.064 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.dll'
+[2023-04-13 16:29:54.064 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.dll - - - 200 24752 application/octet-stream 4.0424ms
+[2023-04-13 16:29:54.064 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.XmlSerializer.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XmlSerializer.dll'
+[2023-04-13 16:29:54.065 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XmlSerializer.dll - - - 200 18096 application/octet-stream 8.7564ms
+[2023-04-13 16:29:54.066 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Xml.dll - -
+[2023-04-13 16:29:54.066 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/netstandard.dll - -
+[2023-04-13 16:29:54.066 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.dll'
+[2023-04-13 16:29:54.067 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.FileProviders.Abstractions.dll - - - 200 21104 application/octet-stream 10.9525ms
+[2023-04-13 16:29:54.067 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/mscorlib.dll - -
+[2023-04-13 16:29:54.067 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.AspNetCore.Components.Web.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.dll'
+[2023-04-13 16:29:54.067 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.Web.dll - - - 200 132224 application/octet-stream 39.7634ms
+[2023-04-13 16:29:54.067 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.Abstractions.dll - -
+[2023-04-13 16:29:54.068 -04:00  INF]  Sending file. Request path: '/webui/_framework/WindowsBase.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\WindowsBase.dll'
+[2023-04-13 16:29:54.068 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/WindowsBase.dll - - - 200 17032 application/octet-stream 4.1575ms
+[2023-04-13 16:29:54.069 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.dll - -
+[2023-04-13 16:29:54.069 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.dll'
+[2023-04-13 16:29:54.069 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.dll - -
+[2023-04-13 16:29:54.070 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.Abstractions.dll'
+[2023-04-13 16:29:54.070 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.dll - - - 200 50864 application/octet-stream 10.3156ms
+[2023-04-13 16:29:54.070 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll - - - 200 43632 application/octet-stream 12.2742ms
+[2023-04-13 16:29:54.070 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.CoreLib.dll - -
+[2023-04-13 16:29:54.070 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.pdb - -
+[2023-04-13 16:29:54.073 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.dll'
+[2023-04-13 16:29:54.074 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Configuration.Abstractions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Abstractions.dll'
+[2023-04-13 16:29:54.074 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.Binder.dll - -
+[2023-04-13 16:29:54.074 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.WebAssembly.dll - - - 200 87144 application/octet-stream 44.6206ms
+[2023-04-13 16:29:54.074 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.Abstractions.dll - - - 200 25200 application/octet-stream 6.4567ms
+[2023-04-13 16:29:54.075 -04:00  INF]  Sending file. Request path: '/webui/_framework/mscorlib.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\mscorlib.dll'
+[2023-04-13 16:29:54.075 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/mscorlib.dll - - - 200 58544 application/octet-stream 7.8368ms
+[2023-04-13 16:29:54.075 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Configuration.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.dll'
+[2023-04-13 16:29:54.075 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.dll - - - 200 36480 application/octet-stream 5.9975ms
+[2023-04-13 16:29:54.075 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll - -
+[2023-04-13 16:29:54.075 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.dll - -
+[2023-04-13 16:29:54.075 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.pdb - -
+[2023-04-13 16:29:54.076 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/MudBlazor.dll - -
+[2023-04-13 16:29:54.077 -04:00  INF]  Sending file. Request path: '/webui/_framework/netstandard.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\netstandard.dll'
+[2023-04-13 16:29:54.077 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/netstandard.dll - - - 200 101504 application/octet-stream 10.7804ms
+[2023-04-13 16:29:54.080 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.FileExtensions.dll'
+[2023-04-13 16:29:54.081 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.FileExtensions.dll - - - 200 26216 application/octet-stream 5.6604ms
+[2023-04-13 16:29:54.081 -04:00  INF]  Sending file. Request path: '/webui/_framework/Azure.Core.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Azure.Core.dll'
+[2023-04-13 16:29:54.082 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Azure.Core.dll - - - 200 321424 application/octet-stream 56.1029ms
+[2023-04-13 16:29:54.082 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Configuration.Binder.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Binder.dll'
+[2023-04-13 16:29:54.082 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.Binder.dll - - - 200 34928 application/octet-stream 7.7362ms
+[2023-04-13 16:29:54.082 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Client.pdb'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Client.pdb'
+[2023-04-13 16:29:54.082 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.pdb - - - 200 49120 application/octet-stream 11.7371ms
+[2023-04-13 16:29:54.082 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.AspNetCore.Components.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Components.dll'
+[2023-04-13 16:29:54.082 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.AspNetCore.Components.dll - - - 200 218240 application/octet-stream 52.8892ms
+[2023-04-13 16:29:54.083 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Data.SqlClient.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Data.SqlClient.dll'
+[2023-04-13 16:29:54.083 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Data.SqlClient.dll - - - 200 275952 application/octet-stream 35.0406ms
+[2023-04-13 16:29:54.088 -04:00  INF]  Sending file. Request path: '/webui/_framework/Azure.Identity.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Azure.Identity.dll'
+[2023-04-13 16:29:54.088 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Azure.Identity.dll - - - 200 306064 application/octet-stream 59.6584ms
+[2023-04-13 16:29:54.088 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.Json.dll - -
+[2023-04-13 16:29:54.089 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.DependencyInjection.dll - -
+[2023-04-13 16:29:54.095 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Shared.pdb'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Shared.pdb'
+[2023-04-13 16:29:54.095 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.pdb - - - 200 24688 application/octet-stream 19.6571ms
+[2023-04-13 16:29:54.096 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Configuration.Json.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Json.dll'
+[2023-04-13 16:29:54.096 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.FileSystemGlobbing.dll - -
+[2023-04-13 16:29:54.098 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Configuration.Json.dll - - - 200 25704 application/octet-stream 9.2615ms
+[2023-04-13 16:29:54.099 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.DependencyInjection.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.dll'
+[2023-04-13 16:29:54.099 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.DependencyInjection.dll - - - 200 82560 application/octet-stream 9.5287ms
+[2023-04-13 16:29:54.099 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.FileProviders.Physical.dll - -
+[2023-04-13 16:29:54.100 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.FileSystemGlobbing.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileSystemGlobbing.dll'
+[2023-04-13 16:29:54.100 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.FileSystemGlobbing.dll - - - 200 44136 application/octet-stream 4.2662ms
+[2023-04-13 16:29:54.101 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Logging.dll - -
+[2023-04-13 16:29:54.103 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Logging.Abstractions.dll - -
+[2023-04-13 16:29:54.116 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Logging.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Logging.dll'
+[2023-04-13 16:29:54.116 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.FileProviders.Physical.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.dll'
+[2023-04-13 16:29:54.118 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Logging.dll - - - 200 44648 application/octet-stream 17.0665ms
+[2023-04-13 16:29:54.118 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.FileProviders.Physical.dll - - - 200 42600 application/octet-stream 18.8817ms
+[2023-04-13 16:29:54.124 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Options.dll - -
+[2023-04-13 16:29:54.124 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Primitives.dll - -
+[2023-04-13 16:29:54.126 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Identity.Client.dll - -
+[2023-04-13 16:29:54.128 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Identity.Client.Extensions.Msal.dll - -
+[2023-04-13 16:29:54.130 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Abstractions.dll - -
+[2023-04-13 16:29:54.130 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Options.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Options.dll'
+[2023-04-13 16:29:54.130 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Options.dll - - - 200 59008 application/octet-stream 5.9960ms
+[2023-04-13 16:29:54.130 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Primitives.dll'
+[2023-04-13 16:29:54.130 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Primitives.dll - - - 200 40048 application/octet-stream 6.2705ms
+[2023-04-13 16:29:54.131 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.JsonWebTokens.dll - -
+[2023-04-13 16:29:54.126 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Extensions.Logging.Abstractions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.dll'
+[2023-04-13 16:29:54.132 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Extensions.Logging.Abstractions.dll - - - 200 63104 application/octet-stream 28.4636ms
+[2023-04-13 16:29:54.133 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Logging.dll - -
+[2023-04-13 16:29:54.134 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Protocols.dll - -
+[2023-04-13 16:29:54.137 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.IdentityModel.Abstractions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.IdentityModel.Abstractions.dll'
+[2023-04-13 16:29:54.137 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Abstractions.dll - - - 200 18864 application/octet-stream 7.3892ms
+[2023-04-13 16:29:54.138 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll - -
+[2023-04-13 16:29:54.139 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.IdentityModel.Logging.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.IdentityModel.Logging.dll'
+[2023-04-13 16:29:54.140 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Identity.Client.Extensions.Msal.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Identity.Client.Extensions.Msal.dll'
+[2023-04-13 16:29:54.140 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Identity.Client.Extensions.Msal.dll - - - 200 62984 application/octet-stream 12.6912ms
+[2023-04-13 16:29:54.141 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.JSInterop.dll - -
+[2023-04-13 16:29:54.141 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Logging.dll - - - 200 34224 application/octet-stream 8.6107ms
+[2023-04-13 16:29:54.143 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.IdentityModel.Protocols.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.IdentityModel.Protocols.dll'
+[2023-04-13 16:29:54.144 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Tokens.dll - -
+[2023-04-13 16:29:54.145 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.IdentityModel.JsonWebTokens.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.IdentityModel.JsonWebTokens.dll'
+[2023-04-13 16:29:54.145 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Protocols.dll - - - 200 38288 application/octet-stream 11.0188ms
+[2023-04-13 16:29:54.145 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.JsonWebTokens.dll - - - 200 89520 application/octet-stream 14.2431ms
+[2023-04-13 16:29:54.145 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.JSInterop.WebAssembly.dll - -
+[2023-04-13 16:29:54.146 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.SqlServer.Server.dll - -
+[2023-04-13 16:29:54.148 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.JSInterop.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.JSInterop.dll'
+[2023-04-13 16:29:54.149 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.JSInterop.dll - - - 200 63112 application/octet-stream 7.1791ms
+[2023-04-13 16:29:54.149 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Win32.SystemEvents.dll - -
+[2023-04-13 16:29:54.150 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.JSInterop.WebAssembly.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.dll'
+[2023-04-13 16:29:54.150 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.JSInterop.WebAssembly.dll - - - 200 21616 application/octet-stream 4.3859ms
+[2023-04-13 16:29:54.150 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Bson.dll - -
+[2023-04-13 16:29:54.151 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Driver.dll - -
+[2023-04-13 16:29:54.151 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.SqlServer.Server.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.SqlServer.Server.dll'
+[2023-04-13 16:29:54.155 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Libmongocrypt.dll - -
+[2023-04-13 16:29:54.155 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.SqlServer.Server.dll - - - 200 23976 application/octet-stream 8.1706ms
+[2023-04-13 16:29:54.156 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Newtonsoft.Json.dll - -
+[2023-04-13 16:29:54.156 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Driver.Core.dll - -
+[2023-04-13 16:29:54.165 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Win32.SystemEvents.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.SystemEvents.dll'
+[2023-04-13 16:29:54.165 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Win32.SystemEvents.dll - - - 200 26224 application/octet-stream 15.9929ms
+[2023-04-13 16:29:54.165 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/SharpCompress.dll - -
+[2023-04-13 16:29:54.219 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Snappier.dll - -
+[2023-04-13 16:29:54.285 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Configuration.ConfigurationManager.dll - -
+[2023-04-13 16:29:54.287 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll'
+[2023-04-13 16:29:54.287 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll - - - 200 114048 application/octet-stream 149.2028ms
+[2023-04-13 16:29:54.287 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Drawing.Common.dll - -
+[2023-04-13 16:29:54.289 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IdentityModel.Tokens.Jwt.dll - -
+[2023-04-13 16:29:54.292 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Pipelines.dll - -
+[2023-04-13 16:29:54.295 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Memory.Data.dll - -
+[2023-04-13 16:29:54.296 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Caching.dll - -
+[2023-04-13 16:29:54.298 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.ProtectedData.dll - -
+[2023-04-13 16:29:54.300 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Permissions.dll - -
+[2023-04-13 16:29:54.305 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Windows.Extensions.dll - -
+[2023-04-13 16:29:54.305 -04:00  INF]  Sending file. Request path: '/webui/_framework/MongoDB.Libmongocrypt.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\MongoDB.Libmongocrypt.dll'
+[2023-04-13 16:29:54.305 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Libmongocrypt.dll - - - 200 58368 application/octet-stream 150.9350ms
+[2023-04-13 16:29:54.311 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.VisualBasic.Core.dll - -
+[2023-04-13 16:29:54.311 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.CSharp.dll - -
+[2023-04-13 16:29:54.311 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/ZstdSharp.dll - -
+[2023-04-13 16:29:54.323 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Memory.Data.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Memory.Data.dll'
+[2023-04-13 16:29:54.324 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Memory.Data.dll - - - 200 21368 application/octet-stream 28.8480ms
+[2023-04-13 16:29:54.325 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.VisualBasic.dll - -
+[2023-04-13 16:29:54.325 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Win32.Primitives.dll - -
+[2023-04-13 16:29:54.326 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Win32.Registry.dll - -
+[2023-04-13 16:29:54.330 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Buffers.dll - -
+[2023-04-13 16:29:54.330 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Shared.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Shared.dll'
+[2023-04-13 16:29:54.331 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Shared.dll - - - 200 45056 application/octet-stream 255.7161ms
+[2023-04-13 16:29:54.332 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.AppContext.dll - -
+[2023-04-13 16:29:54.332 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.Concurrent.dll - -
+[2023-04-13 16:29:54.333 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.Immutable.dll - -
+[2023-04-13 16:29:54.335 -04:00  INF]  Sending file. Request path: '/webui/_framework/Snappier.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Snappier.dll'
+[2023-04-13 16:29:54.336 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Snappier.dll - - - 200 40448 application/octet-stream 116.1105ms
+[2023-04-13 16:29:54.338 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.NonGeneric.dll - -
+[2023-04-13 16:29:54.338 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.ProtectedData.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.ProtectedData.dll'
+[2023-04-13 16:29:54.339 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.ProtectedData.dll - - - 200 20592 application/octet-stream 40.4936ms
+[2023-04-13 16:29:54.340 -04:00  INF]  Sending file. Request path: '/webui/_framework/AWSSDK.SecurityToken.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\AWSSDK.SecurityToken.dll'
+[2023-04-13 16:29:54.340 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.VisualBasic.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.dll'
+[2023-04-13 16:29:54.340 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/AWSSDK.SecurityToken.dll - - - 200 86176 application/octet-stream 316.2148ms
+[2023-04-13 16:29:54.341 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.VisualBasic.dll - - - 200 18096 application/octet-stream 15.8927ms
+[2023-04-13 16:29:54.341 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Windows.Extensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Windows.Extensions.dll'
+[2023-04-13 16:29:54.342 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Buffers.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Buffers.dll'
+[2023-04-13 16:29:54.342 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Buffers.dll - - - 200 15536 application/octet-stream 12.2096ms
+[2023-04-13 16:29:54.342 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.AppContext.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.AppContext.dll'
+[2023-04-13 16:29:54.342 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.AppContext.dll - - - 200 15536 application/octet-stream 10.5122ms
+[2023-04-13 16:29:54.343 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.dll - -
+[2023-04-13 16:29:54.343 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.Specialized.dll - -
+[2023-04-13 16:29:54.343 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Windows.Extensions.dll - - - 200 25712 application/octet-stream 36.6875ms
+[2023-04-13 16:29:54.343 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Win32.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Primitives.dll'
+[2023-04-13 16:29:54.343 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Win32.Primitives.dll - - - 200 19120 application/octet-stream 18.2054ms
+[2023-04-13 16:29:54.344 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Win32.Registry.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Win32.Registry.dll'
+[2023-04-13 16:29:54.345 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Win32.Registry.dll - - - 200 36528 application/octet-stream 18.7896ms
+[2023-04-13 16:29:54.346 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.Pipelines.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Pipelines.dll'
+[2023-04-13 16:29:54.346 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.Annotations.dll - -
+[2023-04-13 16:29:54.347 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Pipelines.dll - - - 200 79512 application/octet-stream 54.1112ms
+[2023-04-13 16:29:54.347 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IdentityModel.Tokens.Jwt.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IdentityModel.Tokens.Jwt.dll'
+[2023-04-13 16:29:54.348 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IdentityModel.Tokens.Jwt.dll - - - 200 90504 application/octet-stream 58.5075ms
+[2023-04-13 16:29:54.349 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.DataAnnotations.dll - -
+[2023-04-13 16:29:54.349 -04:00  INF]  Sending file. Request path: '/webui/_framework/DnsClient.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\DnsClient.dll'
+[2023-04-13 16:29:54.350 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Caching.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Caching.dll'
+[2023-04-13 16:29:54.350 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/DnsClient.dll - - - 200 154112 application/octet-stream 321.7115ms
+[2023-04-13 16:29:54.350 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Caching.dll - - - 200 89200 application/octet-stream 53.5752ms
+[2023-04-13 16:29:54.350 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Collections.NonGeneric.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.NonGeneric.dll'
+[2023-04-13 16:29:54.350 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.NonGeneric.dll - - - 200 47792 application/octet-stream 12.6686ms
+[2023-04-13 16:29:54.351 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.EventBasedAsync.dll - -
+[2023-04-13 16:29:54.351 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.dll - -
+[2023-04-13 16:29:54.352 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Collections.Specialized.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Specialized.dll'
+[2023-04-13 16:29:54.352 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Permissions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Permissions.dll'
+[2023-04-13 16:29:54.353 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.Specialized.dll - - - 200 46256 application/octet-stream 9.7592ms
+[2023-04-13 16:29:54.353 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Permissions.dll - - - 200 104048 application/octet-stream 52.4880ms
+[2023-04-13 16:29:54.353 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Collections.Concurrent.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Concurrent.dll'
+[2023-04-13 16:29:54.353 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.Concurrent.dll - - - 200 87216 application/octet-stream 21.3183ms
+[2023-04-13 16:29:54.354 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ComponentModel.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.dll'
+[2023-04-13 16:29:54.355 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ComponentModel.DataAnnotations.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.DataAnnotations.dll'
+[2023-04-13 16:29:54.356 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ComponentModel.EventBasedAsync.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.EventBasedAsync.dll'
+[2023-04-13 16:29:54.356 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.EventBasedAsync.dll - - - 200 26800 application/octet-stream 5.3733ms
+[2023-04-13 16:29:54.357 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Data.dll - -
+[2023-04-13 16:29:54.358 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.DataAnnotations.dll - - - 200 17584 application/octet-stream 8.8042ms
+[2023-04-13 16:29:54.358 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.dll - - - 200 17032 application/octet-stream 6.3475ms
+[2023-04-13 16:29:54.358 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.Primitives.dll - -
+[2023-04-13 16:29:54.358 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Collections.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.dll'
+[2023-04-13 16:29:54.358 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Drawing.Common.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Drawing.Common.dll'
+[2023-04-13 16:29:54.358 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.dll - - - 200 103088 application/octet-stream 15.3980ms
+[2023-04-13 16:29:54.358 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Drawing.Common.dll - - - 200 175216 application/octet-stream 71.0746ms
+[2023-04-13 16:29:54.359 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ComponentModel.Annotations.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.Annotations.dll'
+[2023-04-13 16:29:54.359 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.TypeConverter.dll - -
+[2023-04-13 16:29:54.359 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.Annotations.dll - - - 200 94384 application/octet-stream 12.7081ms
+[2023-04-13 16:29:54.360 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Data.DataSetExtensions.dll - -
+[2023-04-13 16:29:54.360 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Data.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Data.dll'
+[2023-04-13 16:29:54.360 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Data.dll - - - 200 24752 application/octet-stream 3.5883ms
+[2023-04-13 16:29:54.362 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Configuration.dll - -
+[2023-04-13 16:29:54.362 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Console.dll - -
+[2023-04-13 16:29:54.363 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ComponentModel.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.Primitives.dll'
+[2023-04-13 16:29:54.363 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Collections.Immutable.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.Immutable.dll'
+[2023-04-13 16:29:54.364 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.Primitives.dll - - - 200 41648 application/octet-stream 6.0375ms
+[2023-04-13 16:29:54.364 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Collections.Immutable.dll - - - 200 191152 application/octet-stream 30.7876ms
+[2023-04-13 16:29:54.365 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Data.DataSetExtensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Data.DataSetExtensions.dll'
+[2023-04-13 16:29:54.365 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Core.dll - -
+[2023-04-13 16:29:54.366 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Configuration.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Configuration.dll'
+[2023-04-13 16:29:54.367 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Data.Common.dll - -
+[2023-04-13 16:29:54.369 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Data.DataSetExtensions.dll - - - 200 16048 application/octet-stream 8.9301ms
+[2023-04-13 16:29:54.370 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Contracts.dll - -
+[2023-04-13 16:29:54.370 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Configuration.dll - - - 200 19632 application/octet-stream 8.2700ms
+[2023-04-13 16:29:54.371 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.DiagnosticSource.dll - -
+[2023-04-13 16:29:54.371 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Debug.dll - -
+[2023-04-13 16:29:54.374 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.FileVersionInfo.dll - -
+[2023-04-13 16:29:54.374 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Core.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Core.dll'
+[2023-04-13 16:29:54.374 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Core.dll - - - 200 24192 application/octet-stream 8.8111ms
+[2023-04-13 16:29:54.374 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Process.dll - -
+[2023-04-13 16:29:54.375 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.CSharp.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.CSharp.dll'
+[2023-04-13 16:29:54.375 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.CSharp.dll - - - 200 309376 application/octet-stream 64.6999ms
+[2023-04-13 16:29:54.378 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.Contracts.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Contracts.dll'
+[2023-04-13 16:29:54.378 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Contracts.dll - - - 200 16048 application/octet-stream 8.3186ms
+[2023-04-13 16:29:54.379 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.StackTrace.dll - -
+[2023-04-13 16:29:54.380 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Console.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Console.dll'
+[2023-04-13 16:29:54.380 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Console.dll - - - 200 53424 application/octet-stream 18.1447ms
+[2023-04-13 16:29:54.381 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.TextWriterTraceListener.dll - -
+[2023-04-13 16:29:54.382 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Tracing.dll - -
+[2023-04-13 16:29:54.382 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.Debug.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Debug.dll'
+[2023-04-13 16:29:54.382 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Debug.dll - - - 200 16048 application/octet-stream 10.9150ms
+[2023-04-13 16:29:54.382 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.Process.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Process.dll'
+[2023-04-13 16:29:54.384 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Process.dll - - - 200 43184 application/octet-stream 9.3940ms
+[2023-04-13 16:29:54.384 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Tools.dll - -
+[2023-04-13 16:29:54.386 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.StackTrace.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.StackTrace.dll'
+[2023-04-13 16:29:54.387 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.TraceSource.dll - -
+[2023-04-13 16:29:54.388 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.FileVersionInfo.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.FileVersionInfo.dll'
+[2023-04-13 16:29:54.388 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.FileVersionInfo.dll - - - 200 20144 application/octet-stream 14.4448ms
+[2023-04-13 16:29:54.389 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.Tools.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Tools.dll'
+[2023-04-13 16:29:54.389 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.TextWriterTraceListener.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.TextWriterTraceListener.dll'
+[2023-04-13 16:29:54.390 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.TextWriterTraceListener.dll - - - 200 31408 application/octet-stream 8.8161ms
+[2023-04-13 16:29:54.390 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Drawing.Primitives.dll - -
+[2023-04-13 16:29:54.390 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Tools.dll - - - 200 16048 application/octet-stream 6.3101ms
+[2023-04-13 16:29:54.392 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.Tracing.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.Tracing.dll'
+[2023-04-13 16:29:54.392 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.Tracing.dll - - - 200 16560 application/octet-stream 10.3319ms
+[2023-04-13 16:29:54.392 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Configuration.ConfigurationManager.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Configuration.ConfigurationManager.dll'
+[2023-04-13 16:29:54.393 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Configuration.ConfigurationManager.dll - - - 200 396424 application/octet-stream 107.5693ms
+[2023-04-13 16:29:54.393 -04:00  INF]  Sending file. Request path: '/webui/_framework/MongoDB.Bson.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\MongoDB.Bson.dll'
+[2023-04-13 16:29:54.393 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Bson.dll - - - 200 507904 application/octet-stream 242.8304ms
+[2023-04-13 16:29:54.394 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.DiagnosticSource.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.DiagnosticSource.dll'
+[2023-04-13 16:29:54.394 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.DiagnosticSource.dll - - - 200 145072 application/octet-stream 23.1294ms
+[2023-04-13 16:29:54.394 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Diagnostics.TraceSource.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Diagnostics.TraceSource.dll'
+[2023-04-13 16:29:54.394 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Drawing.dll - -
+[2023-04-13 16:29:54.394 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.TraceSource.dll - - - 200 54960 application/octet-stream 7.8402ms
+[2023-04-13 16:29:54.395 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.VisualBasic.Core.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.VisualBasic.Core.dll'
+[2023-04-13 16:29:54.395 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Diagnostics.StackTrace.dll - - - 200 26800 application/octet-stream 16.4397ms
+[2023-04-13 16:29:54.395 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.VisualBasic.Core.dll - - - 200 428672 application/octet-stream 84.7176ms
+[2023-04-13 16:29:54.395 -04:00  INF]  Sending file. Request path: '/webui/_framework/SharpCompress.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\SharpCompress.dll'
+[2023-04-13 16:29:54.396 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/SharpCompress.dll - - - 200 546304 application/octet-stream 230.8207ms
+[2023-04-13 16:29:54.396 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Dynamic.Runtime.dll - -
+[2023-04-13 16:29:54.398 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Formats.Asn1.dll - -
+[2023-04-13 16:29:54.399 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ComponentModel.TypeConverter.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.TypeConverter.dll'
+[2023-04-13 16:29:54.399 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Drawing.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Drawing.Primitives.dll'
+[2023-04-13 16:29:54.399 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ComponentModel.TypeConverter.dll - - - 200 294528 application/octet-stream 40.0375ms
+[2023-04-13 16:29:54.399 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Drawing.Primitives.dll - - - 200 62640 application/octet-stream 8.9312ms
+[2023-04-13 16:29:54.399 -04:00  INF]  Sending file. Request path: '/webui/_framework/Newtonsoft.Json.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll'
+[2023-04-13 16:29:54.399 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Newtonsoft.Json.dll - - - 200 712464 application/octet-stream 243.8479ms
+[2023-04-13 16:29:54.401 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Globalization.Calendars.dll - -
+[2023-04-13 16:29:54.401 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Dynamic.Runtime.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Dynamic.Runtime.dll'
+[2023-04-13 16:29:54.402 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Dynamic.Runtime.dll - - - 200 16560 application/octet-stream 5.7245ms
+[2023-04-13 16:29:54.402 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Drawing.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Drawing.dll'
+[2023-04-13 16:29:54.402 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Drawing.dll - - - 200 21168 application/octet-stream 7.8389ms
+[2023-04-13 16:29:54.402 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Globalization.Extensions.dll - -
+[2023-04-13 16:29:54.404 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Formats.Asn1.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Formats.Asn1.dll'
+[2023-04-13 16:29:54.404 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Formats.Asn1.dll - - - 200 80512 application/octet-stream 5.4719ms
+[2023-04-13 16:29:54.404 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Globalization.dll - -
+[2023-04-13 16:29:54.406 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Globalization.Calendars.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Globalization.Calendars.dll'
+[2023-04-13 16:29:54.406 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.AccessControl.dll - -
+[2023-04-13 16:29:54.406 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Globalization.Calendars.dll - - - 200 16048 application/octet-stream 5.5831ms
+[2023-04-13 16:29:54.407 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Globalization.Extensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Globalization.Extensions.dll'
+[2023-04-13 16:29:54.407 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Globalization.Extensions.dll - - - 200 15536 application/octet-stream 4.3278ms
+[2023-04-13 16:29:54.407 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.Brotli.dll - -
+[2023-04-13 16:29:54.408 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.FileSystem.AccessControl.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.AccessControl.dll'
+[2023-04-13 16:29:54.409 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.FileSystem.dll - -
+[2023-04-13 16:29:54.411 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.ZipFile.dll - -
+[2023-04-13 16:29:54.412 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.AccessControl.dll - - - 200 26288 application/octet-stream 6.3242ms
+[2023-04-13 16:29:54.413 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.dll - -
+[2023-04-13 16:29:54.414 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.Compression.FileSystem.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.FileSystem.dll'
+[2023-04-13 16:29:54.414 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Globalization.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Globalization.dll'
+[2023-04-13 16:29:54.414 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.Compression.Brotli.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.Brotli.dll'
+[2023-04-13 16:29:54.414 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.FileSystem.dll - - - 200 16048 application/octet-stream 5.5365ms
+[2023-04-13 16:29:54.415 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Globalization.dll - - - 200 16048 application/octet-stream 10.1220ms
+[2023-04-13 16:29:54.415 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.Brotli.dll - - - 200 23216 application/octet-stream 7.3274ms
+[2023-04-13 16:29:54.416 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.DriveInfo.dll - -
+[2023-04-13 16:29:54.416 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.IdentityModel.Tokens.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.IdentityModel.Tokens.dll'
+[2023-04-13 16:29:54.417 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.IdentityModel.Tokens.dll - - - 200 983472 application/octet-stream 272.6735ms
+[2023-04-13 16:29:54.418 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.Compression.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.dll'
+[2023-04-13 16:29:54.419 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.dll - - - 200 107656 application/octet-stream 5.1543ms
+[2023-04-13 16:29:54.420 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.Compression.ZipFile.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Compression.ZipFile.dll'
+[2023-04-13 16:29:54.420 -04:00  INF]  Sending file. Request path: '/webui/_framework/MongoDB.Driver.Core.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\MongoDB.Driver.Core.dll'
+[2023-04-13 16:29:54.420 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Compression.ZipFile.dll - - - 200 33456 application/octet-stream 8.7177ms
+[2023-04-13 16:29:54.420 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Driver.Core.dll - - - 200 963584 application/octet-stream 264.9957ms
+[2023-04-13 16:29:54.420 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.Primitives.dll - -
+[2023-04-13 16:29:54.420 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.FileSystem.DriveInfo.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.DriveInfo.dll'
+[2023-04-13 16:29:54.421 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.DriveInfo.dll - - - 200 23216 application/octet-stream 5.5843ms
+[2023-04-13 16:29:54.421 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.Watcher.dll - -
+[2023-04-13 16:29:54.421 -04:00  INF]  Sending file. Request path: '/webui/_framework/MongoDB.Driver.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\MongoDB.Driver.dll'
+[2023-04-13 16:29:54.422 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/MongoDB.Driver.dll - - - 200 1509376 application/octet-stream 270.3840ms
+[2023-04-13 16:29:54.423 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Data.Common.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Data.Common.dll'
+[2023-04-13 16:29:54.423 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Data.Common.dll - - - 200 998536 application/octet-stream 56.2246ms
+[2023-04-13 16:29:54.423 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.IsolatedStorage.dll - -
+[2023-04-13 16:29:54.422 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.dll - -
+[2023-04-13 16:29:54.423 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.FileSystem.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.Primitives.dll'
+[2023-04-13 16:29:54.424 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.Primitives.dll - - - 200 15496 application/octet-stream 3.9631ms
+[2023-04-13 16:29:54.424 -04:00  INF]  Sending file. Request path: '/webui/_framework/Microsoft.Identity.Client.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.Identity.Client.dll'
+[2023-04-13 16:29:54.424 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/Microsoft.Identity.Client.dll - - - 200 1455576 application/octet-stream 298.9715ms
+[2023-04-13 16:29:54.425 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.MemoryMappedFiles.dll - -
+[2023-04-13 16:29:54.425 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.FileSystem.Watcher.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.Watcher.dll'
+[2023-04-13 16:29:54.426 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.Watcher.dll - - - 200 26752 application/octet-stream 4.6291ms
+[2023-04-13 16:29:54.426 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Pipes.AccessControl.dll - -
+[2023-04-13 16:29:54.427 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Pipes.dll - -
+[2023-04-13 16:29:54.428 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.UnmanagedMemoryStream.dll - -
+[2023-04-13 16:29:54.429 -04:00  INF]  Sending file. Request path: '/webui/_framework/AWSSDK.Core.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\AWSSDK.Core.dll'
+[2023-04-13 16:29:54.429 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/AWSSDK.Core.dll - - - 200 1685152 application/octet-stream 365.6483ms
+[2023-04-13 16:29:54.431 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.dll - -
+[2023-04-13 16:29:54.432 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.MemoryMappedFiles.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.MemoryMappedFiles.dll'
+[2023-04-13 16:29:54.432 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.MemoryMappedFiles.dll - - - 200 44720 application/octet-stream 7.6076ms
+[2023-04-13 16:29:54.433 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.Expressions.dll - -
+[2023-04-13 16:29:54.433 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.Pipes.AccessControl.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Pipes.AccessControl.dll'
+[2023-04-13 16:29:54.433 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.IsolatedStorage.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.IsolatedStorage.dll'
+[2023-04-13 16:29:54.434 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.IsolatedStorage.dll - - - 200 28336 application/octet-stream 10.7136ms
+[2023-04-13 16:29:54.435 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.Pipes.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.Pipes.dll'
+[2023-04-13 16:29:54.435 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Mail.dll - -
+[2023-04-13 16:29:54.435 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.UnmanagedMemoryStream.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.UnmanagedMemoryStream.dll'
+[2023-04-13 16:29:54.436 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Pipes.dll - - - 200 31920 application/octet-stream 8.5166ms
+[2023-04-13 16:29:54.435 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.FileSystem.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.dll'
+[2023-04-13 16:29:54.436 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.FileSystem.dll - - - 200 24240 application/octet-stream 14.4923ms
+[2023-04-13 16:29:54.437 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.Pipes.AccessControl.dll - - - 200 21680 application/octet-stream 10.8105ms
+[2023-04-13 16:29:54.439 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.Parallel.dll - -
+[2023-04-13 16:29:54.440 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Mail.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Mail.dll'
+[2023-04-13 16:29:54.440 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.UnmanagedMemoryStream.dll - - - 200 15488 application/octet-stream 12.0548ms
+[2023-04-13 16:29:54.441 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.Queryable.dll - -
+[2023-04-13 16:29:54.441 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.IO.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.dll'
+[2023-04-13 16:29:54.442 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.IO.dll - - - 200 16048 application/octet-stream 10.8541ms
+[2023-04-13 16:29:54.442 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Mail.dll - - - 200 104576 application/octet-stream 7.3899ms
+[2023-04-13 16:29:54.443 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.dll - -
+[2023-04-13 16:29:54.444 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Memory.dll - -
+[2023-04-13 16:29:54.446 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Http.Json.dll - -
+[2023-04-13 16:29:54.446 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Linq.Queryable.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Queryable.dll'
+[2023-04-13 16:29:54.449 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Linq.Parallel.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Parallel.dll'
+[2023-04-13 16:29:54.449 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.Queryable.dll - - - 200 92848 application/octet-stream 8.2456ms
+[2023-04-13 16:29:54.449 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.Parallel.dll - - - 200 224944 application/octet-stream 10.4644ms
+[2023-04-13 16:29:54.449 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Http.dll - -
+[2023-04-13 16:29:54.450 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Memory.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Memory.dll'
+[2023-04-13 16:29:54.451 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.HttpListener.dll - -
+[2023-04-13 16:29:54.451 -04:00  INF]  Sending file. Request path: '/webui/_framework/ZstdSharp.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\ZstdSharp.dll'
+[2023-04-13 16:29:54.451 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/ZstdSharp.dll - - - 200 412672 application/octet-stream 140.6207ms
+[2023-04-13 16:29:54.451 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Http.Json.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Http.Json.dll'
+[2023-04-13 16:29:54.452 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Linq.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Linq.dll'
+[2023-04-13 16:29:54.452 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.NameResolution.dll - -
+[2023-04-13 16:29:54.452 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Http.Json.dll - - - 200 42160 application/octet-stream 6.0732ms
+[2023-04-13 16:29:54.453 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Linq.Expressions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Linq.Expressions.dll'
+[2023-04-13 16:29:54.454 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.Expressions.dll - - - 200 568496 application/octet-stream 20.8858ms
+[2023-04-13 16:29:54.455 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Linq.dll - - - 200 128176 application/octet-stream 11.8011ms
+[2023-04-13 16:29:54.455 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Private.Xml.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.Xml.dll'
+[2023-04-13 16:29:54.455 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.NetworkInformation.dll - -
+[2023-04-13 16:29:54.455 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Memory.dll - - - 200 63616 application/octet-stream 11.3392ms
+[2023-04-13 16:29:54.455 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.HttpListener.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.HttpListener.dll'
+[2023-04-13 16:29:54.455 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Xml.dll - - - 200 3099824 application/octet-stream 389.0881ms
+[2023-04-13 16:29:54.456 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.NameResolution.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.NameResolution.dll'
+[2023-04-13 16:29:54.456 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Ping.dll - -
+[2023-04-13 16:29:54.456 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.HttpListener.dll - - - 200 40576 application/octet-stream 5.6929ms
+[2023-04-13 16:29:54.457 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Primitives.dll - -
+[2023-04-13 16:29:54.458 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Http.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Http.dll'
+[2023-04-13 16:29:54.458 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Http.dll - - - 200 258736 application/octet-stream 9.0507ms
+[2023-04-13 16:29:54.458 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Quic.dll - -
+[2023-04-13 16:29:54.460 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Ping.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Ping.dll'
+[2023-04-13 16:29:54.460 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Private.CoreLib.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.CoreLib.dll'
+[2023-04-13 16:29:54.461 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Security.dll - -
+[2023-04-13 16:29:54.461 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.CoreLib.dll - - - 200 3461760 application/octet-stream 390.7168ms
+[2023-04-13 16:29:54.461 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.NetworkInformation.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.NetworkInformation.dll'
+[2023-04-13 16:29:54.461 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Primitives.dll'
+[2023-04-13 16:29:54.462 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Primitives.dll - - - 200 95920 application/octet-stream 4.4723ms
+[2023-04-13 16:29:54.462 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.NameResolution.dll - - - 200 21640 application/octet-stream 9.7665ms
+[2023-04-13 16:29:54.462 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.NetworkInformation.dll - - - 200 36480 application/octet-stream 7.1476ms
+[2023-04-13 16:29:54.463 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Requests.dll - -
+[2023-04-13 16:29:54.464 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Ping.dll - - - 200 23728 application/octet-stream 7.1268ms
+[2023-04-13 16:29:54.464 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Quic.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Quic.dll'
+[2023-04-13 16:29:54.464 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Quic.dll - - - 200 26288 application/octet-stream 5.5726ms
+[2023-04-13 16:29:54.465 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Security.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Security.dll'
+[2023-04-13 16:29:54.465 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.ServicePoint.dll - -
+[2023-04-13 16:29:54.466 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Security.dll - - - 200 66176 application/octet-stream 5.4086ms
+[2023-04-13 16:29:54.466 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebClient.dll - -
+[2023-04-13 16:29:54.467 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Requests.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Requests.dll'
+[2023-04-13 16:29:54.467 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Sockets.dll - -
+[2023-04-13 16:29:54.468 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.ServicePoint.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.ServicePoint.dll'
+[2023-04-13 16:29:54.469 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebHeaderCollection.dll - -
+[2023-04-13 16:29:54.469 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Requests.dll - - - 200 47792 application/octet-stream 5.4752ms
+[2023-04-13 16:29:54.470 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.ServicePoint.dll - - - 200 26288 application/octet-stream 4.7296ms
+[2023-04-13 16:29:54.471 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebProxy.dll - -
+[2023-04-13 16:29:54.471 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.WebClient.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebClient.dll'
+[2023-04-13 16:29:54.471 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.Sockets.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.Sockets.dll'
+[2023-04-13 16:29:54.473 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebSockets.dll - -
+[2023-04-13 16:29:54.474 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.Sockets.dll - - - 200 57520 application/octet-stream 6.0896ms
+[2023-04-13 16:29:54.474 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.WebHeaderCollection.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebHeaderCollection.dll'
+[2023-04-13 16:29:54.474 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebClient.dll - - - 200 30848 application/octet-stream 7.3160ms
+[2023-04-13 16:29:54.475 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebSockets.Client.dll - -
+[2023-04-13 16:29:54.475 -04:00  INF]  Sending file. Request path: '/webui/_framework/BlazorCRUDApp.Client.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\BlazorCRUDApp.Client.dll'
+[2023-04-13 16:29:54.476 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.WebProxy.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebProxy.dll'
+[2023-04-13 16:29:54.476 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebHeaderCollection.dll - - - 200 33968 application/octet-stream 7.4869ms
+[2023-04-13 16:29:54.477 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.dll - -
+[2023-04-13 16:29:54.477 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.WebSockets.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebSockets.dll'
+[2023-04-13 16:29:54.477 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/BlazorCRUDApp.Client.dll - - - 200 91648 application/octet-stream 407.6411ms
+[2023-04-13 16:29:54.478 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebProxy.dll - - - 200 21120 application/octet-stream 6.9661ms
+[2023-04-13 16:29:54.478 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Numerics.Vectors.dll - -
+[2023-04-13 16:29:54.479 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.WebSockets.Client.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.WebSockets.Client.dll'
+[2023-04-13 16:29:54.479 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebSockets.dll - - - 200 80560 application/octet-stream 6.6136ms
+[2023-04-13 16:29:54.480 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.WebSockets.Client.dll - - - 200 48304 application/octet-stream 4.8067ms
+[2023-04-13 16:29:54.481 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.DataContractSerialization.dll - -
+[2023-04-13 16:29:54.481 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ObjectModel.dll - -
+[2023-04-13 16:29:54.482 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Net.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Net.dll'
+[2023-04-13 16:29:54.482 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Numerics.Vectors.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Numerics.Vectors.dll'
+[2023-04-13 16:29:54.483 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Numerics.dll - -
+[2023-04-13 16:29:54.483 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Net.dll - - - 200 18048 application/octet-stream 5.9490ms
+[2023-04-13 16:29:54.484 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Runtime.InteropServices.JavaScript.dll - -
+[2023-04-13 16:29:54.484 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Numerics.Vectors.dll - - - 200 16048 application/octet-stream 5.1931ms
+[2023-04-13 16:29:54.486 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ObjectModel.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ObjectModel.dll'
+[2023-04-13 16:29:54.487 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Uri.dll - -
+[2023-04-13 16:29:54.487 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ObjectModel.dll - - - 200 49328 application/octet-stream 6.0731ms
+[2023-04-13 16:29:54.488 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Private.Runtime.InteropServices.JavaScript.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.Runtime.InteropServices.JavaScript.dll'
+[2023-04-13 16:29:54.488 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.DispatchProxy.dll - -
+[2023-04-13 16:29:54.489 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Numerics.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Numerics.dll'
+[2023-04-13 16:29:54.490 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Emit.dll - -
+[2023-04-13 16:29:54.490 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Numerics.dll - - - 200 16048 application/octet-stream 7.2016ms
+[2023-04-13 16:29:54.491 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Private.Uri.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.Uri.dll'
+[2023-04-13 16:29:54.491 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Xml.Linq.dll - -
+[2023-04-13 16:29:54.491 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Runtime.InteropServices.JavaScript.dll - - - 200 50352 application/octet-stream 7.6680ms
+[2023-04-13 16:29:54.491 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Uri.dll - - - 200 101552 application/octet-stream 4.6778ms
+[2023-04-13 16:29:54.492 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.DispatchProxy.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.DispatchProxy.dll'
+[2023-04-13 16:29:54.494 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Emit.Lightweight.dll - -
+[2023-04-13 16:29:54.494 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.DispatchProxy.dll - - - 200 36528 application/octet-stream 5.3896ms
+[2023-04-13 16:29:54.522 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.Emit.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Emit.dll'
+[2023-04-13 16:29:54.528 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Emit.dll - - - 200 16048 application/octet-stream 38.0882ms
+[2023-04-13 16:29:54.528 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Emit.ILGeneration.dll - -
+[2023-04-13 16:29:54.529 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Private.Xml.Linq.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.Xml.Linq.dll'
+[2023-04-13 16:29:54.530 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Extensions.dll - -
+[2023-04-13 16:29:54.530 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.Xml.Linq.dll - - - 200 154240 application/octet-stream 38.5562ms
+[2023-04-13 16:29:54.531 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.Emit.ILGeneration.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Emit.ILGeneration.dll'
+[2023-04-13 16:29:54.532 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Private.DataContractSerialization.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Private.DataContractSerialization.dll'
+[2023-04-13 16:29:54.532 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.Extensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Extensions.dll'
+[2023-04-13 16:29:54.533 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Primitives.dll - -
+[2023-04-13 16:29:54.532 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Emit.ILGeneration.dll - - - 200 16048 application/octet-stream 3.1205ms
+[2023-04-13 16:29:54.533 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Private.DataContractSerialization.dll - - - 200 792192 application/octet-stream 52.5472ms
+[2023-04-13 16:29:54.533 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Extensions.dll - - - 200 15536 application/octet-stream 3.5309ms
+[2023-04-13 16:29:54.532 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Metadata.dll - -
+[2023-04-13 16:29:54.534 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.dll - -
+[2023-04-13 16:29:54.535 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.TypeExtensions.dll - -
+[2023-04-13 16:29:54.536 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Resources.ResourceManager.dll - -
+[2023-04-13 16:29:54.538 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Primitives.dll'
+[2023-04-13 16:29:54.538 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.Emit.Lightweight.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Emit.Lightweight.dll'
+[2023-04-13 16:29:54.539 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Resources.Reader.dll - -
+[2023-04-13 16:29:54.541 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Primitives.dll - - - 200 16048 application/octet-stream 7.6182ms
+[2023-04-13 16:29:54.541 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.TypeExtensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.TypeExtensions.dll'
+[2023-04-13 16:29:54.541 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.dll'
+[2023-04-13 16:29:54.541 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Resources.Writer.dll - -
+[2023-04-13 16:29:54.542 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Emit.Lightweight.dll - - - 200 15536 application/octet-stream 48.1300ms
+[2023-04-13 16:29:54.542 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Resources.ResourceManager.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Resources.ResourceManager.dll'
+[2023-04-13 16:29:54.542 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Resources.ResourceManager.dll - - - 200 16000 application/octet-stream 5.5186ms
+[2023-04-13 16:29:54.543 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.CompilerServices.Unsafe.dll - -
+[2023-04-13 16:29:54.543 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.dll - - - 200 16560 application/octet-stream 9.7813ms
+[2023-04-13 16:29:54.544 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Reflection.Metadata.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Reflection.Metadata.dll'
+[2023-04-13 16:29:54.545 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Resources.Reader.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Resources.Reader.dll'
+[2023-04-13 16:29:54.546 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.CompilerServices.VisualC.dll - -
+[2023-04-13 16:29:54.547 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Resources.Reader.dll - - - 200 15488 application/octet-stream 7.4027ms
+[2023-04-13 16:29:54.547 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Resources.Writer.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Resources.Writer.dll'
+[2023-04-13 16:29:54.546 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.Metadata.dll - - - 200 454320 application/octet-stream 13.2477ms
+[2023-04-13 16:29:54.547 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Reflection.TypeExtensions.dll - - - 200 24192 application/octet-stream 10.9229ms
+[2023-04-13 16:29:54.548 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.InteropServices.RuntimeInformation.dll - -
+[2023-04-13 16:29:54.549 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.InteropServices.dll - -
+[2023-04-13 16:29:54.550 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Extensions.dll - -
+[2023-04-13 16:29:54.550 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Resources.Writer.dll - - - 200 27312 application/octet-stream 6.3353ms
+[2023-04-13 16:29:54.551 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.CompilerServices.VisualC.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.CompilerServices.VisualC.dll'
+[2023-04-13 16:29:54.553 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Handles.dll - -
+[2023-04-13 16:29:54.553 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Formatters.dll - -
+[2023-04-13 16:29:54.553 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.CompilerServices.VisualC.dll - - - 200 18096 application/octet-stream 6.7239ms
+[2023-04-13 16:29:54.553 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.InteropServices.RuntimeInformation.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.InteropServices.RuntimeInformation.dll'
+[2023-04-13 16:29:54.554 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.InteropServices.RuntimeInformation.dll - - - 200 21680 application/octet-stream 5.8887ms
+[2023-04-13 16:29:54.554 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Extensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Extensions.dll'
+[2023-04-13 16:29:54.555 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Intrinsics.dll - -
+[2023-04-13 16:29:54.556 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Extensions.dll - - - 200 18048 application/octet-stream 6.0243ms
+[2023-04-13 16:29:54.557 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.dll - -
+[2023-04-13 16:29:54.557 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.InteropServices.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.InteropServices.dll'
+[2023-04-13 16:29:54.558 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Handles.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Handles.dll'
+[2023-04-13 16:29:54.558 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Serialization.Formatters.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Formatters.dll'
+[2023-04-13 16:29:54.559 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Loader.dll - -
+[2023-04-13 16:29:54.559 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.CompilerServices.Unsafe.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.CompilerServices.Unsafe.dll'
+[2023-04-13 16:29:54.560 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.InteropServices.dll - - - 200 39088 application/octet-stream 11.4009ms
+[2023-04-13 16:29:54.561 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Intrinsics.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Intrinsics.dll'
+[2023-04-13 16:29:54.562 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Handles.dll - - - 200 15536 application/octet-stream 9.9315ms
+[2023-04-13 16:29:54.562 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Numerics.dll - -
+[2023-04-13 16:29:54.562 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.CompilerServices.Unsafe.dll - - - 200 17584 application/octet-stream 19.5573ms
+[2023-04-13 16:29:54.563 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.dll'
+[2023-04-13 16:29:54.564 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Intrinsics.dll - - - 200 16520 application/octet-stream 9.2201ms
+[2023-04-13 16:29:54.564 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Formatters.dll - - - 200 64688 application/octet-stream 11.7287ms
+[2023-04-13 16:29:54.565 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Loader.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Loader.dll'
+[2023-04-13 16:29:54.564 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Json.dll - -
+[2023-04-13 16:29:54.565 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.dll - - - 200 42160 application/octet-stream 7.8735ms
+[2023-04-13 16:29:54.567 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Xml.dll - -
+[2023-04-13 16:29:54.567 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Loader.dll - - - 200 16048 application/octet-stream 8.1365ms
+[2023-04-13 16:29:54.567 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Numerics.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Numerics.dll'
+[2023-04-13 16:29:54.569 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Serialization.Json.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Json.dll'
+[2023-04-13 16:29:54.569 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Primitives.dll - -
+[2023-04-13 16:29:54.569 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Numerics.dll - - - 200 80048 application/octet-stream 7.1321ms
+[2023-04-13 16:29:54.570 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Json.dll - - - 200 16048 application/octet-stream 5.9829ms
+[2023-04-13 16:29:54.571 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.dll - -
+[2023-04-13 16:29:54.571 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Serialization.Xml.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Xml.dll'
+[2023-04-13 16:29:54.572 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.AccessControl.dll - -
+[2023-04-13 16:29:54.572 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Xml.dll - - - 200 16560 application/octet-stream 5.2641ms
+[2023-04-13 16:29:54.573 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Claims.dll - -
+[2023-04-13 16:29:54.573 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Serialization.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Primitives.dll'
+[2023-04-13 16:29:54.574 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.Primitives.dll - - - 200 22704 application/octet-stream 5.2011ms
+[2023-04-13 16:29:54.575 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Cng.dll - -
+[2023-04-13 16:29:54.575 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Runtime.Serialization.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.dll'
+[2023-04-13 16:29:54.577 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Algorithms.dll - -
+[2023-04-13 16:29:54.576 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.AccessControl.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.AccessControl.dll'
+[2023-04-13 16:29:54.577 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Runtime.Serialization.dll - - - 200 17584 application/octet-stream 6.3554ms
+[2023-04-13 16:29:54.577 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Claims.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Claims.dll'
+[2023-04-13 16:29:54.578 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.AccessControl.dll - - - 200 46256 application/octet-stream 5.7804ms
+[2023-04-13 16:29:54.579 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Csp.dll - -
+[2023-04-13 16:29:54.579 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Claims.dll - - - 200 51888 application/octet-stream 6.3308ms
+[2023-04-13 16:29:54.580 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.Cng.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Cng.dll'
+[2023-04-13 16:29:54.581 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.Algorithms.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Algorithms.dll'
+[2023-04-13 16:29:54.582 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Encoding.dll - -
+[2023-04-13 16:29:54.582 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Cng.dll - - - 200 43184 application/octet-stream 7.1636ms
+[2023-04-13 16:29:54.582 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Algorithms.dll - - - 200 85168 application/octet-stream 5.7583ms
+[2023-04-13 16:29:54.592 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.OpenSsl.dll - -
+[2023-04-13 16:29:54.593 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.Csp.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Csp.dll'
+[2023-04-13 16:29:54.593 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Primitives.dll - -
+[2023-04-13 16:29:54.594 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.Encoding.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Encoding.dll'
+[2023-04-13 16:29:54.594 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.X509Certificates.dll - -
+[2023-04-13 16:29:54.595 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Csp.dll - - - 200 33456 application/octet-stream 15.0039ms
+[2023-04-13 16:29:54.596 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Principal.Windows.dll - -
+[2023-04-13 16:29:54.596 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Encoding.dll - - - 200 27312 application/octet-stream 14.2449ms
+[2023-04-13 16:29:54.596 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.OpenSsl.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.OpenSsl.dll'
+[2023-04-13 16:29:54.598 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.dll - -
+[2023-04-13 16:29:54.598 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.OpenSsl.dll - - - 200 28336 application/octet-stream 6.0710ms
+[2023-04-13 16:29:54.599 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.Primitives.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Primitives.dll'
+[2023-04-13 16:29:54.600 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Principal.dll - -
+[2023-04-13 16:29:54.600 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Cryptography.X509Certificates.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.dll'
+[2023-04-13 16:29:54.600 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Principal.Windows.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Principal.Windows.dll'
+[2023-04-13 16:29:54.601 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.Primitives.dll - - - 200 64176 application/octet-stream 7.7720ms
+[2023-04-13 16:29:54.601 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.SecureString.dll - -
+[2023-04-13 16:29:54.602 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.dll'
+[2023-04-13 16:29:54.603 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Principal.Windows.dll - - - 200 31920 application/octet-stream 6.5845ms
+[2023-04-13 16:29:54.603 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Cryptography.X509Certificates.dll - - - 200 63664 application/octet-stream 8.3497ms
+[2023-04-13 16:29:54.604 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ServiceModel.Web.dll - -
+[2023-04-13 16:29:54.604 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.dll - - - 200 18568 application/octet-stream 6.7473ms
+[2023-04-13 16:29:54.605 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.Principal.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.Principal.dll'
+[2023-04-13 16:29:54.606 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.Principal.dll - - - 200 15536 application/octet-stream 6.1141ms
+[2023-04-13 16:29:54.606 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ServiceProcess.dll - -
+[2023-04-13 16:29:54.606 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Security.SecureString.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Security.SecureString.dll'
+[2023-04-13 16:29:54.608 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ServiceModel.Web.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ServiceModel.Web.dll'
+[2023-04-13 16:29:54.608 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encoding.CodePages.dll - -
+[2023-04-13 16:29:54.608 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Security.SecureString.dll - - - 200 15496 application/octet-stream 6.3785ms
+[2023-04-13 16:29:54.609 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encoding.Extensions.dll - -
+[2023-04-13 16:29:54.609 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ServiceModel.Web.dll - - - 200 17584 application/octet-stream 5.2969ms
+[2023-04-13 16:29:54.610 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ServiceProcess.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ServiceProcess.dll'
+[2023-04-13 16:29:54.612 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ServiceProcess.dll - - - 200 16560 application/octet-stream 5.4838ms
+[2023-04-13 16:29:54.612 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encoding.dll - -
+[2023-04-13 16:29:54.614 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encodings.Web.dll - -
+[2023-04-13 16:29:54.614 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Text.Encoding.Extensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encoding.Extensions.dll'
+[2023-04-13 16:29:54.615 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encoding.Extensions.dll - - - 200 16048 application/octet-stream 5.4049ms
+[2023-04-13 16:29:54.615 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Json.dll - -
+[2023-04-13 16:29:54.616 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.RegularExpressions.dll - -
+[2023-04-13 16:29:54.616 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Text.Encoding.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encoding.dll'
+[2023-04-13 16:29:54.617 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.Parallel.dll - -
+[2023-04-13 16:29:54.618 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Text.Encodings.Web.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encodings.Web.dll'
+[2023-04-13 16:29:54.618 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Channels.dll - -
+[2023-04-13 16:29:54.619 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encoding.dll - - - 200 16048 application/octet-stream 6.6676ms
+[2023-04-13 16:29:54.620 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.Dataflow.dll - -
+[2023-04-13 16:29:54.622 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Overlapped.dll - -
+[2023-04-13 16:29:54.623 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Text.RegularExpressions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.RegularExpressions.dll'
+[2023-04-13 16:29:54.624 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.RegularExpressions.dll - - - 200 191104 application/octet-stream 7.7919ms
+[2023-04-13 16:29:54.624 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Tasks.Parallel.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Tasks.Parallel.dll'
+[2023-04-13 16:29:54.625 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.Extensions.dll - -
+[2023-04-13 16:29:54.626 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.dll - -
+[2023-04-13 16:29:54.627 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encodings.Web.dll - - - 200 71296 application/octet-stream 13.8914ms
+[2023-04-13 16:29:54.628 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.Parallel.dll - - - 200 60592 application/octet-stream 11.0658ms
+[2023-04-13 16:29:54.628 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Channels.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Channels.dll'
+[2023-04-13 16:29:54.628 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Tasks.Extensions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Tasks.Extensions.dll'
+[2023-04-13 16:29:54.628 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.dll - -
+[2023-04-13 16:29:54.628 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Text.Encoding.CodePages.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Encoding.CodePages.dll'
+[2023-04-13 16:29:54.629 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.Extensions.dll - - - 200 16000 application/octet-stream 3.5606ms
+[2023-04-13 16:29:54.629 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Encoding.CodePages.dll - - - 200 740528 application/octet-stream 20.8014ms
+[2023-04-13 16:29:54.629 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Channels.dll - - - 200 52400 application/octet-stream 10.5751ms
+[2023-04-13 16:29:54.629 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Tasks.Dataflow.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Tasks.Dataflow.dll'
+[2023-04-13 16:29:54.629 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Timer.dll - -
+[2023-04-13 16:29:54.629 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.Dataflow.dll - - - 200 179888 application/octet-stream 8.7319ms
+[2023-04-13 16:29:54.630 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Text.Json.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Json.dll'
+[2023-04-13 16:29:54.630 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Overlapped.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Overlapped.dll'
+[2023-04-13 16:29:54.630 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Text.Json.dll - - - 200 457904 application/octet-stream 15.1854ms
+[2023-04-13 16:29:54.632 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Thread.dll - -
+[2023-04-13 16:29:54.632 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Overlapped.dll - - - 200 16048 application/octet-stream 9.4493ms
+[2023-04-13 16:29:54.632 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Tasks.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Tasks.dll'
+[2023-04-13 16:29:54.633 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.dll'
+[2023-04-13 16:29:54.634 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Transactions.Local.dll - -
+[2023-04-13 16:29:54.634 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Timer.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Timer.dll'
+[2023-04-13 16:29:54.635 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Tasks.dll - - - 200 17072 application/octet-stream 8.8487ms
+[2023-04-13 16:29:54.635 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.dll - - - 200 45744 application/octet-stream 6.7433ms
+[2023-04-13 16:29:54.635 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.ThreadPool.dll - -
+[2023-04-13 16:29:54.636 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.Thread.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.Thread.dll'
+[2023-04-13 16:29:54.636 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Timer.dll - - - 200 15536 application/octet-stream 7.0086ms
+[2023-04-13 16:29:54.637 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.Linq.dll - -
+[2023-04-13 16:29:54.638 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Transactions.dll - -
+[2023-04-13 16:29:54.638 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.Thread.dll - - - 200 16048 application/octet-stream 6.9009ms
+[2023-04-13 16:29:54.639 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Transactions.Local.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Transactions.Local.dll'
+[2023-04-13 16:29:54.640 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Transactions.Local.dll - - - 200 154240 application/octet-stream 5.9969ms
+[2023-04-13 16:29:54.640 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Threading.ThreadPool.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Threading.ThreadPool.dll'
+[2023-04-13 16:29:54.640 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ValueTuple.dll - -
+[2023-04-13 16:29:54.642 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Web.HttpUtility.dll - -
+[2023-04-13 16:29:54.643 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Threading.ThreadPool.dll - - - 200 16048 application/octet-stream 7.2769ms
+[2023-04-13 16:29:54.643 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Transactions.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Transactions.dll'
+[2023-04-13 16:29:54.643 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.Linq.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.Linq.dll'
+[2023-04-13 16:29:54.644 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Web.dll - -
+[2023-04-13 16:29:54.645 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Transactions.dll - - - 200 17072 application/octet-stream 6.0494ms
+[2023-04-13 16:29:54.645 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.ValueTuple.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.ValueTuple.dll'
+[2023-04-13 16:29:54.645 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.Linq.dll - - - 200 16560 application/octet-stream 7.9871ms
+[2023-04-13 16:29:54.647 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Windows.dll - -
+[2023-04-13 16:29:54.647 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.ValueTuple.dll - - - 200 15536 application/octet-stream 6.9888ms
+[2023-04-13 16:29:54.648 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.ReaderWriter.dll - -
+[2023-04-13 16:29:54.648 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Web.HttpUtility.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Web.HttpUtility.dll'
+[2023-04-13 16:29:54.649 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Web.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Web.dll'
+[2023-04-13 16:29:54.649 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.Serialization.dll - -
+[2023-04-13 16:29:54.651 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XDocument.dll - -
+[2023-04-13 16:29:54.651 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Web.HttpUtility.dll - - - 200 27776 application/octet-stream 9.5249ms
+[2023-04-13 16:29:54.652 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.ReaderWriter.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.ReaderWriter.dll'
+[2023-04-13 16:29:54.652 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Web.dll - - - 200 16048 application/octet-stream 7.8734ms
+[2023-04-13 16:29:54.653 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XPath.dll - -
+[2023-04-13 16:29:54.653 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Windows.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Windows.dll'
+[2023-04-13 16:29:54.654 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.Serialization.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.Serialization.dll'
+[2023-04-13 16:29:54.654 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.ReaderWriter.dll - - - 200 22192 application/octet-stream 6.2607ms
+[2023-04-13 16:29:54.654 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XPath.XDocument.dll - -
+[2023-04-13 16:29:54.656 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Windows.dll - - - 200 16560 application/octet-stream 9.1653ms
+[2023-04-13 16:29:54.657 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.Serialization.dll - - - 200 16520 application/octet-stream 7.7631ms
+[2023-04-13 16:29:54.657 -04:00  INF]  Sending file. Request path: '/webui/_framework/MudBlazor.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\MudBlazor.dll'
+[2023-04-13 16:29:54.658 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/MudBlazor.dll - - - 200 8923648 application/octet-stream 581.8759ms
+[2023-04-13 16:29:54.659 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.XPath.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.dll'
+[2023-04-13 16:29:54.659 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XPath.dll - - - 200 16048 application/octet-stream 6.5313ms
+[2023-04-13 16:29:54.659 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.XPath.XDocument.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XPath.XDocument.dll'
+[2023-04-13 16:29:54.660 -04:00  INF]  Sending file. Request path: '/webui/_framework/System.Xml.XDocument.dll'. Physical path: 'C:\Users\hanss_nuxi99u\source\repos\EAMUSE_NET\EAMUSENET\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XDocument.dll'
+[2023-04-13 16:29:54.662 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XDocument.dll - - - 200 16048 application/octet-stream 11.2183ms
+[2023-04-13 16:29:54.663 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/_framework/System.Xml.XPath.XDocument.dll - - - 200 16560 application/octet-stream 8.4080ms
+[2023-04-13 16:29:55.703 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/favicon.ico - -
+[2023-04-13 16:29:55.703 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/favicon.ico - - - 404 0 - 0.4470ms
+[2023-04-13 16:29:56.758 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/api/scoring/GetAllScore - -
+[2023-04-13 16:29:56.763 -04:00  INF]  Executing endpoint 'BlazorCRUDApp.Server.Controllers.ScoringController.GetAllScore (eamusenet.Server)'
+[2023-04-13 16:29:56.799 -04:00  INF]  Route matched with {action = "GetAllScore", controller = "Scoring", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[eamuse.Score] GetAllScore() on controller BlazorCRUDApp.Server.Controllers.ScoringController (eamusenet.Server).
+[2023-04-13 16:30:00.968 -04:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[eamuse.Score, BlazorCRUDApp.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2023-04-13 16:30:01.002 -04:00  INF]  Executed action BlazorCRUDApp.Server.Controllers.ScoringController.GetAllScore (eamusenet.Server) in 4198.0207ms
+[2023-04-13 16:30:01.004 -04:00  INF]  Executed endpoint 'BlazorCRUDApp.Server.Controllers.ScoringController.GetAllScore (eamusenet.Server)'
+[2023-04-13 16:30:01.004 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/api/scoring/GetAllScore - - - 200 - application/json;+charset=utf-8 4245.9683ms
+[2023-04-13 16:30:01.343 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/Asset/Grades/grade0.png - -
+[2023-04-13 16:30:01.343 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/Asset/Grades/grade1.png - -
+[2023-04-13 16:30:01.343 -04:00  INF]  The file /webui/Asset/Grades/grade0.png was not modified
+[2023-04-13 16:30:01.343 -04:00  INF]  The file /webui/Asset/Grades/grade1.png was not modified
+[2023-04-13 16:30:01.343 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/Asset/Grades/grade0.png - - - 304 - image/png 0.3958ms
+[2023-04-13 16:30:01.343 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/Asset/Grades/grade1.png - - - 304 - image/png 0.3977ms
+[2023-04-13 16:30:03.609 -04:00  INF]  Request starting HTTP/1.1 GET http://localhost:5091/webui/api/scoring/GetAllScore - -
+[2023-04-13 16:30:03.611 -04:00  INF]  Executing endpoint 'BlazorCRUDApp.Server.Controllers.ScoringController.GetAllScore (eamusenet.Server)'
+[2023-04-13 16:30:03.611 -04:00  INF]  Route matched with {action = "GetAllScore", controller = "Scoring", page = ""}. Executing controller action with signature System.Collections.Generic.List`1[eamuse.Score] GetAllScore() on controller BlazorCRUDApp.Server.Controllers.ScoringController (eamusenet.Server).
+[2023-04-13 16:30:05.674 -04:00  INF]  Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[eamuse.Score, BlazorCRUDApp.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2023-04-13 16:30:05.675 -04:00  INF]  Executed action BlazorCRUDApp.Server.Controllers.ScoringController.GetAllScore (eamusenet.Server) in 2064.2915ms
+[2023-04-13 16:30:05.675 -04:00  INF]  Executed endpoint 'BlazorCRUDApp.Server.Controllers.ScoringController.GetAllScore (eamusenet.Server)'
+[2023-04-13 16:30:05.675 -04:00  INF]  Request finished HTTP/1.1 GET http://localhost:5091/webui/api/scoring/GetAllScore - - - 200 - application/json;+charset=utf-8 2066.1046ms

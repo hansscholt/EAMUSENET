@@ -574,17 +574,17 @@ namespace BlazorCRUDApp.Shared
                 if (maxScores)
                 {
                     query = string.Format("select * " +
-                    "from( select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
+                    "from( select top 400 score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
                     "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, score_rank, ROW_NUMBER() " +
                     "OVER(PARTITION BY score_mcode, score_notetype ORDER BY score_score desc) as rn " +
                     "from score inner join [card] on [card].card_id = score.score_cardid ) as a " +
-                    "where rn = 1");
+                    "where rn = 1 order by score_date desc");
                 }
                 else
                 {
-                    query = string.Format("select score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
+                    query = string.Format("select top 400 score_id, score_mcode, score_clearkind, score_count, score_ghostid, score_score, score_exscore, score_maxcombo, score_notetype, " +
                     "score_marvelous, score_perfect, score_great, score_good, score_boo, score_miss, score_ok, score_ng, score_fast, score_slow, [card].card_name, score_date, score_rank " +
-                    "from score inner join [card] on [card].card_id = score.score_cardid");
+                    "from score inner join [card] on [card].card_id = score.score_cardid order by score_date desc");
                 }
 
                 using (SqlCommand command = new SqlCommand(query, conn))

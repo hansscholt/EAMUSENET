@@ -5,9 +5,9 @@
 
 <PageTitle>Scoring</PageTitle>
 
-<MudTabs Outlined="true">
-    <MudTabPanel Disabled="@_loading" OnClick="GetMaxScore" Text="Max Scores" />
-    <MudTabPanel Disabled="@_loading" OnClick="GetAllScore" Text="All Scores" />
+<MudTabs Outlined="true">    
+    <MudTabPanel Disabled="@_loading" OnClick="GetAllScore" Text="Latest Scores" />
+    <MudTabPanel Disabled="true" OnClick="GetMaxScore" Text="My Scores" />
 </MudTabs>
 <MudTable Items="@scoreList" Dense="true" Hover="true" SortLabel="Sort By" FixedHeader="true" FixedFooter="true"
           Loading="@_loading" LoadingProgressColor="Color.Info">
@@ -79,7 +79,7 @@
     private List<Score> scoreList = new List<Score>();
     protected override async Task OnInitializedAsync()
     {
-        await GetMaxScore();
+        await GetAllScore();
     }
 
     async Task GetMaxScore()
