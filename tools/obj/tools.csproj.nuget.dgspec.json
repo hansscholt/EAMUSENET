@@ -48,10 +48,6 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"
-            },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.19.1, )"
             }
           },
           "imports": [

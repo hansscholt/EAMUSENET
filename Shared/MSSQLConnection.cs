@@ -1,10 +1,10 @@
-﻿using Amazon.Util.Internal;
+﻿//using Amazon.Util.Internal;
 using Azure;
 using eamuse;
 using eamuse.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.VisualBasic.FileIO;
-using MongoDB.Driver;
+//using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,10 +22,10 @@ namespace BlazorCRUDApp.Shared
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-            builder.DataSource = "SQL8005.site4now.net";
-            builder.UserID = "db_a9734b_dbeamuse_admin";
-            builder.Password = "zKbE12oToAbPfQFu";
-            builder.InitialCatalog = "db_a9734b_dbeamuse";
+            builder.DataSource = "yourdatasource";
+            builder.UserID = "youruser";
+            builder.Password = "yourpassword";
+            builder.InitialCatalog = "yourdatabase";
             return builder.ConnectionString;
         }
 

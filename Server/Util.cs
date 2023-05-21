@@ -1,9 +1,9 @@
-﻿using Amazon.Runtime.Internal;
+﻿//using Amazon.Runtime.Internal;
 using eamuse.KBin;
 using eamuse.Compression;
 using System.Security.Cryptography;
 using System.Xml.Linq;
-using ZstdSharp;
+//using ZstdSharp;
 using eamuse.KBin;
 
 namespace eamuse
